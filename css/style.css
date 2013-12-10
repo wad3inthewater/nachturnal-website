@@ -1,55 +1,7 @@
-/* line 2, ../sass/_test.scss */
-.scroll {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-/* line 7, ../sass/_test.scss */
-.scroll-mt {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-/* line 13, ../sass/_test.scss */
-.horizon {
-  width: 3000px;
-  height: 100%;
-  z-index: -3;
-  background: url("../img/stars-bg.jpg") repeat;
-}
-
-/* line 23, ../sass/_test.scss */
-.middle {
-  z-index: -1;
-  width: 4000px;
-}
-
-/* line 27, ../sass/_test.scss */
-.front {
-  z-index: 1;
-  width: 6000px;
-}
-
-/* line 31, ../sass/_test.scss */
-.copy {
-  width: 1000px;
-  display: inline-block;
-  margin: 50px;
-  background: #ccc;
-  color: #ff0000;
-}
-
-/* line 39, ../sass/_test.scss */
-.sun {
-  width: 200px;
-  height: 200px;
-}
-
 /* line 7, ../sass/style.scss */
 body {
-  color: #000;
+  background-color: #020201;
+  color: #030201;
   padding: 0;
   margin: 0;
   min-width: 1024px;
@@ -100,7 +52,7 @@ section .box {
 
 /* line 62, ../sass/style.scss */
 .about-section {
-  background: black url("../img/cityscape.png") no-repeat;
+  background: url("../img/cityscape.png") no-repeat;
   background-size: 100%;
   width: 100%;
 }
@@ -119,7 +71,13 @@ section .box {
 }
 
 /* line 83, ../sass/style.scss */
+.logo {
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+/* line 88, ../sass/style.scss */
 .img-holder {
   width: 100%;
-  background: #ff0000;
 }

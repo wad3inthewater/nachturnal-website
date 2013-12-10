@@ -1,5 +1,5 @@
 /*
-Syntax error: File to import not found or unreadable: /bootstrap-core//variables.
+Syntax error: File to import not found or unreadable: /bootstrap-core/variables.
               Load paths:
                 /Users/Wad3/repo-workspace/nachturnal/sass
                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets
@@ -74,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: /bootstrap-core//variables.\A               Load paths:\A                 /Users/Wad3/repo-workspace/nachturnal/sass\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 12 of /Users/Wad3/repo-workspace/nachturnal/sass/bootstrap.scss"; }
+  content: "Syntax error: File to import not found or unreadable: /bootstrap-core/variables.\A               Load paths:\A                 /Users/Wad3/repo-workspace/nachturnal/sass\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 12 of /Users/Wad3/repo-workspace/nachturnal/sass/bootstrap.scss"; }

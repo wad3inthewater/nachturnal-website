@@ -1,12 +1,12 @@
-@import '_test';
+//@import 'bootstrap.scss';
 html{
 	//overflow:scroll;
 	//height:100%;
 	
 }
 body{
-	//background:#3c2d2d;
-	color:#000;
+	background-color:#020201;
+	color:#030201;
 	padding:0;
 	margin:0;
 	min-width:1024px;
@@ -61,7 +61,7 @@ section{
 }
 .about-section{
 	
-	background:#000 url("../img/cityscape.png") no-repeat;
+	background:url("../img/cityscape.png") no-repeat;
 	background-size:100%;
 	width:100%;
 }
@@ -80,10 +80,14 @@ section{
 	margin:0 auto;
 
 }
+.logo{
+	margin:0 auto;
+	position:relative;
+	top:150px;
+}
 .img-holder{
 
 	width:100%;
-	background:#ff0000;
 }
 
 
