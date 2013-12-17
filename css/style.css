@@ -136,11 +136,45 @@ INTRO SECTION
   position: relative;
 }
 /* line 155, ../sass/style.scss */
-.music-section-header p {
+.music-section-header .large-text-wrap {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+/* line 160, ../sass/style.scss */
+.music-section-header ul {
   color: #070a0d;
   font-size: 100px;
   letter-spacing: 20px;
   text-align: center;
+  list-style: none;
+  padding: 0;
+  line-height: 110px;
+  display: inline-block;
+}
+/* line 170, ../sass/style.scss */
+.music-section-header span {
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+/* line 177, ../sass/style.scss */
+.music-section-header .a-underline {
+  left: 38%;
+}
+/* line 180, ../sass/style.scss */
+.music-section-header .little-underline {
+  left: 43%;
+}
+/* line 183, ../sass/style.scss */
+.music-section-header .night-underline {
+  left: 36%;
+}
+/* line 187, ../sass/style.scss */
+.music-section-header .music-underline {
+  left: 48%;
 }
 
 /* line 42, icons/*.png */

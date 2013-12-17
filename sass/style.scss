@@ -152,11 +152,40 @@ MUSIC SECTION
 	width:100%;
 	padding-top:100px;
 	position:relative;
-	p{
+	.large-text-wrap{
+		margin:0 auto;
+		width:100%;
+		text-align:center;
+	}
+	ul{
 		color:#070a0d;
 		font-size:100px;
 		letter-spacing:20px;
 		text-align:center;
+		list-style:none;
+		padding:0;
+		line-height:110px;
+		display:inline-block;
+	}
+	span{
+		font-size: 16px;
+		color:#fff;
+		position:absolute;
+		letter-spacing: 3px;
+		text-decoration: underline;
+	}
+	.a-underline{
+		left: 38%;
+	}
+	.little-underline{
+		left:43%;
+	}
+	.night-underline{
+		left:36%;
+
+	}
+	.music-underline{
+		left:48%;
 	}
 }
 @import "_sprites.scss";
