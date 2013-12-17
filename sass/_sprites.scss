@@ -1,0 +1,13 @@
+
+
+//@import "compass/utilities/sprites";
+@import "icons/*.png";
+$icons-sprite-dimensions: true;
+//@include all-my-icons-sprites;
+
+.icn{
+	display:block;
+}
+.icn-arrow{
+    @include icons-sprite('intro-arrow');
+}

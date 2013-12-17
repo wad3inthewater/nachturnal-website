@@ -19,6 +19,10 @@
 
 $(document).ready(function() {
 
+$('ul.nav a').smoothScroll({
+    speed:1000
+});
+
 function handleResize(){
     $("section").height($(window).height());
 }

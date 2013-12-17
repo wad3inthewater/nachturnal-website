@@ -1,63 +1,108 @@
-/* line 7, ../sass/style.scss */
+@font-face {
+  font-family: "asherFont";
+  src: url("../fonts/Raisonne_Demibold.woff"), url("../fonts/Raisonne_Demibold.ttf"), url("../fonts/Raisonne_Demibold.svg");
+}
+
+/* line 15, ../sass/style.scss */
 body {
   background-color: #020201;
-  color: #030201;
+  color: #fff;
   padding: 0;
   margin: 0;
   min-width: 1024px;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
+body, p, h1, h2, h3, nav, ul, li {
+  font-family: "asherFont";
+}
+
+/* line 26, ../sass/style.scss */
 body, html {
   height: 100%;
   width: 100%;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 nav {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   padding: 20px;
   z-index: 53;
+  color: #fff;
 }
-/* line 30, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 nav ul li {
-  font-size: 30px;
+  font-size: 18px;
   font-weight: bold;
   display: inline;
   padding-right: 20px;
 }
-/* line 37, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 nav a, nav a:visited {
-  color: #ff0000;
+  color: #fff;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 article {
   height: 100%;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 section {
   position: relative;
   min-height: 300px;
   width: 100%;
 }
-/* line 57, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 section .box {
   background: #ff0000;
   height: 20px;
 }
 
-/* line 62, ../sass/style.scss */
-.about-section {
-  background: url("../img/cityscape.png") no-repeat;
-  background-size: 100%;
+/*==============-=======
+
+INTRO SECTION
+==============-======= */
+/* line 76, ../sass/style.scss */
+.intro-arrow {
+  position: relative;
+  text-align: center;
+}
+/* line 80, ../sass/style.scss */
+.intro-arrow .icn-arrow {
+  margin: 0 auto;
+}
+
+/* line 87, ../sass/style.scss */
+.logo {
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  margin-bottom: 150px;
+}
+
+/* line 93, ../sass/style.scss */
+.img-holder {
   width: 100%;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
+.skyscrapers {
+  background: url("../img/cityscape.png") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 113, ../sass/style.scss */
+.clouds {
+  position: absolute;
+}
+
+/* line 118, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -70,14 +115,47 @@ section .box {
   margin: 0 auto;
 }
 
-/* line 83, ../sass/style.scss */
-.logo {
-  margin: 0 auto;
-  position: relative;
-  top: 150px;
+/* line 133, ../sass/style.scss */
+.about-quote {
+  margin-top: 50px;
 }
 
-/* line 88, ../sass/style.scss */
-.img-holder {
+/* line 144, ../sass/style.scss */
+.music-background {
+  height: 100%;
   width: 100%;
+  margin: 0 auto;
+  background: url("../img/music-background.jpg") no-repeat;
+  background-position: center;
+}
+
+/* line 151, ../sass/style.scss */
+.music-section-header {
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+}
+/* line 155, ../sass/style.scss */
+.music-section-header p {
+  color: #070a0d;
+  font-size: 100px;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+/* line 42, icons/*.png */
+.icons-sprite, .icn-arrow {
+  background: url('../img/icons-s2d5d81a68a.png') no-repeat;
+}
+
+/* line 8, ../sass/_sprites.scss */
+.icn {
+  display: block;
+}
+
+/* line 11, ../sass/_sprites.scss */
+.icn-arrow {
+  background-position: 0 0;
+  height: 41px;
+  width: 61px;
 }
