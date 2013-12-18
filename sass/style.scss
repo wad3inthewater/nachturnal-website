@@ -18,6 +18,8 @@ body{
 	padding:0;
 	margin:0;
 	min-width:1024px;
+	width:1200px;
+	margin:0 auto;
 	//height:100%;
 	//background-attachment:fixed;
 
@@ -122,7 +124,7 @@ ABOUT SECTION
 	min-width:200px;
 	max-height:100%;
 	max-width:120px;
-	max-width:500px;
+	max-width:400px;
 	//width:50%;
 	right:0;
 	left:0;
@@ -147,6 +149,7 @@ MUSIC SECTION
 	margin:0 auto;
 	background:url("../img/music-background.jpg") no-repeat;
 	background-position:center;
+	position:relative;	
 }
 .music-section-header{
 	width:100%;
@@ -188,4 +191,36 @@ MUSIC SECTION
 		left:48%;
 	}
 }
+.stars-background{
+	//background:url("../img/stars-music.png") no-repeat;
+	//height:100%;
+	//width:100%;
+	//background-position: 0 0;
+	//background-size:100%;
+	position:absolute;	
+
+}
+
+/*/==========================
+
+NORSE POSTER SECTION 01 - 02
+
+//==========================*/
+
+.norse-poster-bg-part-01{
+	background:url("../img/norse-poster-bg-01.jpg") no-repeat;
+	background-position:50% 100%;
+	//background-position:center;
+	height:100%;
+
+}
+
+.norse-poster-bg-part-02{
+	background:url("../img/norse-poster-bg-02.jpg") no-repeat;
+	//background-position:center;
+	background-position:50% 0%;
+	height:100%;
+}
+
+
 @import "_sprites.scss";

@@ -10,20 +10,22 @@ body {
   padding: 0;
   margin: 0;
   min-width: 1024px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 body, p, h1, h2, h3, nav, ul, li {
   font-family: "asherFont";
 }
 
-/* line 26, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 body, html {
   height: 100%;
   width: 100%;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 nav {
   position: fixed;
   top: 0;
@@ -32,30 +34,30 @@ nav {
   z-index: 53;
   color: #fff;
 }
-/* line 39, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 nav ul li {
   font-size: 18px;
   font-weight: bold;
   display: inline;
   padding-right: 20px;
 }
-/* line 46, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 nav a, nav a:visited {
   color: #fff;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 article {
   height: 100%;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 section {
   position: relative;
   min-height: 300px;
   width: 100%;
 }
-/* line 66, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 section .box {
   background: #ff0000;
   height: 20px;
@@ -65,17 +67,17 @@ section .box {
 
 INTRO SECTION
 ==============-======= */
-/* line 76, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .intro-arrow {
   position: relative;
   text-align: center;
 }
-/* line 80, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .intro-arrow .icn-arrow {
   margin: 0 auto;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .logo {
   margin: 0 auto;
   position: relative;
@@ -83,12 +85,12 @@ INTRO SECTION
   margin-bottom: 150px;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .img-holder {
   width: 100%;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
   background-size: 100%;
@@ -97,51 +99,52 @@ INTRO SECTION
   position: absolute;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
   max-height: 100%;
   max-width: 120px;
-  max-width: 500px;
+  max-width: 400px;
   right: 0;
   left: 0;
   bottom: 0;
   margin: 0 auto;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .music-background {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   background: url("../img/music-background.jpg") no-repeat;
   background-position: center;
+  position: relative;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .music-section-header {
   width: 100%;
   padding-top: 100px;
   position: relative;
 }
-/* line 155, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .music-section-header .large-text-wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-/* line 160, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .music-section-header ul {
   color: #070a0d;
   font-size: 100px;
@@ -152,7 +155,7 @@ INTRO SECTION
   line-height: 110px;
   display: inline-block;
 }
-/* line 170, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .music-section-header span {
   font-size: 16px;
   color: #fff;
@@ -160,21 +163,40 @@ INTRO SECTION
   letter-spacing: 3px;
   text-decoration: underline;
 }
-/* line 177, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .music-section-header .a-underline {
   left: 38%;
 }
-/* line 180, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 .music-section-header .little-underline {
   left: 43%;
 }
-/* line 183, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .music-section-header .night-underline {
   left: 36%;
 }
-/* line 187, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .music-section-header .music-underline {
   left: 48%;
+}
+
+/* line 194, ../sass/style.scss */
+.stars-background {
+  position: absolute;
+}
+
+/* line 210, ../sass/style.scss */
+.norse-poster-bg-part-01 {
+  background: url("../img/norse-poster-bg-01.jpg") no-repeat;
+  background-position: 50% 100%;
+  height: 100%;
+}
+
+/* line 218, ../sass/style.scss */
+.norse-poster-bg-part-02 {
+  background: url("../img/norse-poster-bg-02.jpg") no-repeat;
+  background-position: 50% 0%;
+  height: 100%;
 }
 
 /* line 42, icons/*.png */
