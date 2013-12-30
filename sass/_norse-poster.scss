@@ -1,0 +1,32 @@
+/*/==========================
+
+NORSE POSTER SECTION 01 - 02
+
+//==========================*/
+
+.norse-poster-bg-part-01{
+	background:url("../img/norse-poster-bg-01.jpg") no-repeat;
+	background-position:50% 100%;
+	//background-position:center;
+	height:100%;
+
+}
+
+.norse-poster-bg-part-02{
+	background:url("../img/norse-poster-bg-02.jpg") no-repeat;
+	background-position:center;
+	background-position:50% 0%;
+	height:100%;
+}
+
+.norse-poster{
+	//	display:inline-block;
+	margin:0 auto;
+	max-height:700px;
+	padding-top:40px;
+
+	@media(min-width:1200px) and (min-height:900px){
+		max-height:900px;
+	}
+
+}

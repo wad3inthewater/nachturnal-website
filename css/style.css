@@ -6,7 +6,7 @@
 /* line 15, ../sass/style.scss */
 body {
   background-color: #020201;
-  color: #fff;
+  color: #ff0000;
   padding: 0;
   margin: 0;
   min-width: 1024px;
@@ -54,10 +54,11 @@ article {
 /* line 62, ../sass/style.scss */
 section {
   position: relative;
-  min-height: 300px;
+  min-height: 700px;
   width: 100%;
+  border-top: 2px #ff0000 solid;
 }
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 section .box {
   background: #ff0000;
   height: 20px;
@@ -67,17 +68,17 @@ section .box {
 
 INTRO SECTION
 ==============-======= */
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .intro-arrow {
   position: relative;
   text-align: center;
 }
-/* line 82, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .intro-arrow .icn-arrow {
   margin: 0 auto;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .logo {
   margin: 0 auto;
   position: relative;
@@ -85,12 +86,12 @@ INTRO SECTION
   margin-bottom: 150px;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .img-holder {
   width: 100%;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
   background-size: 100%;
@@ -99,12 +100,12 @@ INTRO SECTION
   position: absolute;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -117,12 +118,12 @@ INTRO SECTION
   margin: 0 auto;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .music-background {
   height: 100%;
   width: 100%;
@@ -132,19 +133,19 @@ INTRO SECTION
   position: relative;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .music-section-header {
   width: 100%;
   padding-top: 100px;
   position: relative;
 }
-/* line 158, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .music-section-header .large-text-wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-/* line 163, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .music-section-header ul {
   color: #070a0d;
   font-size: 100px;
@@ -155,7 +156,7 @@ INTRO SECTION
   line-height: 110px;
   display: inline-block;
 }
-/* line 173, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .music-section-header span {
   font-size: 16px;
   color: #fff;
@@ -163,40 +164,26 @@ INTRO SECTION
   letter-spacing: 3px;
   text-decoration: underline;
 }
-/* line 180, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .music-section-header .a-underline {
   left: 38%;
 }
-/* line 183, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .music-section-header .little-underline {
   left: 43%;
 }
-/* line 186, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .music-section-header .night-underline {
   left: 36%;
 }
-/* line 190, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .music-section-header .music-underline {
   left: 48%;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .stars-background {
   position: absolute;
-}
-
-/* line 210, ../sass/style.scss */
-.norse-poster-bg-part-01 {
-  background: url("../img/norse-poster-bg-01.jpg") no-repeat;
-  background-position: 50% 100%;
-  height: 100%;
-}
-
-/* line 218, ../sass/style.scss */
-.norse-poster-bg-part-02 {
-  background: url("../img/norse-poster-bg-02.jpg") no-repeat;
-  background-position: 50% 0%;
-  height: 100%;
 }
 
 /* line 42, icons/*.png */
@@ -214,4 +201,54 @@ INTRO SECTION
   background-position: 0 0;
   height: 41px;
   width: 61px;
+}
+
+/* line 7, ../sass/_norse-poster.scss */
+.norse-poster-bg-part-01 {
+  background: url("../img/norse-poster-bg-01.jpg") no-repeat;
+  background-position: 50% 100%;
+  height: 100%;
+}
+
+/* line 15, ../sass/_norse-poster.scss */
+.norse-poster-bg-part-02 {
+  background: url("../img/norse-poster-bg-02.jpg") no-repeat;
+  background-position: center;
+  background-position: 50% 0%;
+  height: 100%;
+}
+
+/* line 22, ../sass/_norse-poster.scss */
+.norse-poster {
+  margin: 0 auto;
+  max-height: 700px;
+  padding-top: 40px;
+}
+@media (min-width: 1200px) and (min-height: 900px) {
+  /* line 22, ../sass/_norse-poster.scss */
+  .norse-poster {
+    max-height: 900px;
+  }
+}
+
+/* line 1, ../sass/_clientele.scss */
+#clientele {
+  font-size: 40px;
+  color: #4c423d;
+  border: 1px #ff0000 solid;
+}
+
+/* line 9, ../sass/_clientele.scss */
+.client-bg {
+  background: url("../img/client-bg.jpg") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+/* line 15, ../sass/_clientele.scss */
+.client-bg p {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  padding: 0 30px 0 30px;
 }
