@@ -10,11 +10,11 @@
 html{
 	//overflow:scroll;
 	//height:100%;
-	
+
 }
 body{
 	background-color:#020201;
-	color:#ff0000; //030201
+	color:#fff; //030201
 	padding:0;
 	margin:0;
 	min-width:1024px;
@@ -56,11 +56,11 @@ nav{
 	}
 }
 article{
-	
-	
+
+
 	//overflow:hidden;
 	//white-space:nowrap;
-	height:100%;		
+	height:100%;
 	//background:url("../img/stars-bg.jpg") 0 0 repeat fixed;
 }
 
@@ -112,7 +112,7 @@ ABOUT SECTION
 //==========================*/
 
 .skyscrapers{
-	
+
 	background:url("../img/cityscape.png") no-repeat;
 	background-size:100%;
 	width:100%;
@@ -144,74 +144,10 @@ ABOUT SECTION
 	//border:1px #ff0000 solid;
 }
 
-/*/==========================
-
-MUSIC SECTION
-
-//==========================*/
-
-.music-background{
-	height:100%;
-	width:100%;
-	margin:0 auto;
-	background:url("../img/music-background.jpg") no-repeat;
-	background-position:center;
-	position:relative;	
-}
-.music-section-header{
-	width:100%;
-	padding-top:100px;
-	position:relative;
-	.large-text-wrap{
-		margin:0 auto;
-		width:100%;
-		text-align:center;
-	}
-	ul{
-		color:#070a0d;
-		font-size:100px;
-		letter-spacing:20px;
-		text-align:center;
-		list-style:none;
-		padding:0;
-		line-height:110px;
-		display:inline-block;
-	}
-	span{
-		font-size: 16px;
-		color:#fff;
-		position:absolute;
-		letter-spacing: 3px;
-		text-decoration: underline;
-	}
-	.a-underline{
-		left: 38%;
-	}
-	.little-underline{
-		left:43%;
-	}
-	.night-underline{
-		left:36%;
-
-	}
-	.music-underline{
-		left:48%;
-	}
-}
-.stars-background{
-	//background:url("../img/stars-music.png") no-repeat;
-	//height:100%;
-	//width:100%;
-	//background-position: 0 0;
-	//background-size:100%;
-	position:absolute;	
-
-}
 
 
 
-
-
+@import "_music-section.scss";
 @import "_sprites.scss";
 @import "_norse-poster.scss";
 @import "_clientele.scss";
