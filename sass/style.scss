@@ -26,7 +26,7 @@ body{
 }
 body,p,h1,h2,h3,nav,ul,li{font-family:"asherFont";}
 body,html{
-	height:100%;
+	height:100% !important;
 	width:100%;
 }
 h2{
@@ -60,7 +60,7 @@ article{
 
 	//overflow:hidden;
 	//white-space:nowrap;
-	height:100%;
+	height:100% !important;
 	//background:url("../img/stars-bg.jpg") 0 0 repeat fixed;
 }
 
@@ -68,6 +68,7 @@ section{
 	position:relative;
 	min-height:700px;
 	width:100%;
+	height:100% !important;
 	//overflow:visible;
 	border-top: 2px #ff0000 solid;
 	//min-height:65%;
