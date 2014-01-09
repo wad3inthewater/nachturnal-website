@@ -62,7 +62,7 @@ article {
 /* line 61, ../sass/style.scss */
 section {
   position: relative;
-  min-height: 700px;
+  min-height: 768px;
   width: 100%;
   height: 100% !important;
 }
@@ -101,7 +101,7 @@ INTRO SECTION
   width: 100%;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
   background-size: 100%;
@@ -111,12 +111,18 @@ INTRO SECTION
   position: absolute;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
+.cloud-3 {
+  top: -140px;
+  width: 25%;
+}
+
+/* line 124, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -129,7 +135,7 @@ INTRO SECTION
   margin: 0 auto;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
 }
@@ -237,16 +243,52 @@ INTRO SECTION
 }
 
 /* line 22, ../sass/_norse-poster.scss */
+.poster-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 27, ../sass/_norse-poster.scss */
 .norse-poster {
   margin: 0 auto;
   max-height: 700px;
   padding-top: 40px;
 }
 @media (min-width: 1200px) and (min-height: 900px) {
-  /* line 22, ../sass/_norse-poster.scss */
+  /* line 27, ../sass/_norse-poster.scss */
   .norse-poster {
     max-height: 900px;
   }
+}
+
+/* line 37, ../sass/_norse-poster.scss */
+.norse-poster-title {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 110px;
+  max-width: 500px;
+  width: 30%;
+}
+
+/* line 48, ../sass/_norse-poster.scss */
+.video-link {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 200px;
+}
+/* line 53, ../sass/_norse-poster.scss */
+.video-link a {
+  color: #fff;
+  font-size: 50px;
+}
+/* line 56, ../sass/_norse-poster.scss */
+.video-link a:hover {
+  color: #00ffff;
 }
 
 /* line 1, ../sass/_clientele.scss */

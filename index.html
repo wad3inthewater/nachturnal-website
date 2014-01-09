@@ -12,9 +12,10 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -27,10 +28,11 @@
         <!--<div id="stars-bg"></div>-->
         <nav>
             <ul class="nav">
-                <li><a href="#intro">PAGE_01</a></li>
-                <li><a href="#about">page_02</a></li>
-                <li><a href="#music">page_03</a></li>
-                <li><a href="#page_04">page_04</a></li>
+                <li><a href="#intro">intro</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#music">music</a></li>
+                <li><a href="#norse-connection">poster</a></li>
+                <li><a href="#video">video</a></li>
                 <li><a href="#clientele">clientele</a></li>
                 <li><a href="#connect">contact</a></li>
             </ul>
@@ -46,7 +48,7 @@
                     <img src="img/asher-nacht-title.png" alt="" class="img-responsive logo">
                     <div class='intro-arrow'>
                         <p>
-                            OUT FOR BITCHES<br>
+                            OUT FOR<br>
                             THE <br>
                             NIGHT
                          </p>
@@ -67,7 +69,7 @@
                         data-anchor-target="#about"
                         data-500-top="left:100px; opacity:0;"
                         data-top="left:0; opacity:1;">
-                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-2"
+                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud cloud-3 col-md-4 col-md-offset-2"
                         data-anchor-target="#about"
                         data-500-top="right:200px; opacity:0;"
                         data-top="right:0; opacity:1;"
@@ -75,8 +77,8 @@
                 </div>
                 <div class="about-content skyscrapers"
                     data-anchor-target="#about"
-                    data-400-top="background-position:0 60%;"
-                    data-top="background-position:0 40%;">
+                    data-400-top="background-position:0 80%;"
+                    data-top="background-position:0 60%;">
                     <div class="img-holder">
                         <img src="img/asher.png" alt="" class="img-responsive about-pic"
                             data-anchor-target="#about"
@@ -99,8 +101,8 @@
                         data--100-top="top:50%;"
                         > -->
                     <div class="stars-bg"
-                        data-800-top="background-position:0 600px;"
-                        data--1000-top="background-position:0 20px;">
+                        data-800-top="background-position:50% 600px;"
+                        data--1000-top="background-position:50% 20px;">
                         <div class="music-section-header">
                             <div class="large-text-wrap">
                                 <ul>
@@ -114,15 +116,23 @@
                     </div>
                 </div>
             </section>
-            <section id="page_04">
+            <section id="norse-connection">
                 <div class="norse-poster-bg-part-01">
-                    <img src="img/norse-poster.jpg" alt="" class="img-responsive norse-poster">
+                    <div class="poster-container">
+                        <img src="img/norse-poster-title.png" alt="" class="norse-poster-title img-responsive"
+                            data-anchor-target="#norse-connection"
+                            data-500-top="width:1%; opacity:0;"
+                            data-top="width:30%; opacity:1;">
+                        <img src="img/norse-poster.jpg" alt="" class="img-responsive norse-poster">
+                    </div>
                 </div>
             </section>
 
-            <section id="page_05">
+            <section id="video">
                 <div class="norse-poster-bg-part-02">
-
+                    <div class="video-link">
+                        <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;">video test click</a>
+                    </div>
                 </div>
             </section>
 
@@ -171,15 +181,11 @@
         <script src="src/jquery.smooth-scroll.js"></script>
         <script src="lib/jquery.ba-bbq.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.scrolling-parallax.js"></script>
         <script src="js/script.js"></script>
         <script src="js/plugins.js"></script>
-
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript">
-    //var s = skrollr.init();
-    </script>
-    <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript" src="js/shadowbox.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>

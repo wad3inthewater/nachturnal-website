@@ -19,6 +19,11 @@ NORSE POSTER SECTION 01 - 02
 	height:100%;
 }
 
+.poster-container{
+	width:100%;
+	margin:0 auto;
+	position: relative;
+}
 .norse-poster{
 	//	display:inline-block;
 	margin:0 auto;
@@ -28,5 +33,28 @@ NORSE POSTER SECTION 01 - 02
 	@media(min-width:1200px) and (min-height:900px){
 		max-height:900px;
 	}
-
+}
+.norse-poster-title{
+	position:absolute;
+	margin:0 auto;
+	z-index:10;
+	left:0;
+	right:0;
+	top:110px;
+	max-width:500px;
+	width:30%;
+	//top:200px;
+}
+.video-link{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	padding-top:200px;
+	a{
+		color:#fff;
+		font-size:50px;
+		&:hover{
+			color:#00ffff;
+		}
+	}
 }

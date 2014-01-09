@@ -19,6 +19,11 @@
 
 $(document).ready(function() {
     var s = skrollr.init();
+    Shadowbox.init({
+        language:'en',
+        players:['img','swf']
+    });
+
     $('ul.nav a').smoothScroll({
         speed:1000
     });
