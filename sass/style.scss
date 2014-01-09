@@ -4,13 +4,9 @@
        url("../fonts/Raisonne_Demibold.ttf"),
        url("../fonts/Raisonne_Demibold.svg");
 }
-
-
-
 html{
 	//overflow:scroll;
 	//height:100%;
-
 }
 body{
 	background-color:#020201;
@@ -22,7 +18,6 @@ body{
 	margin:0 auto;
 	//height:100%;
 	//background-attachment:fixed;
-
 }
 body,p,h1,h2,h3,nav,ul,li{font-family:"asherFont";}
 body,html{
@@ -33,6 +28,7 @@ h2{
 	font-size:12px;
 	text-decoration:underline;
 	padding-top:30px;
+	margin-top:0;
 }
 
 nav{
@@ -56,8 +52,6 @@ nav{
 	}
 }
 article{
-
-
 	//overflow:hidden;
 	//white-space:nowrap;
 	height:100% !important;
@@ -70,7 +64,7 @@ section{
 	width:100%;
 	height:100% !important;
 	//overflow:visible;
-	border-top: 2px #ff0000 solid;
+	//border-top: 2px #ff0000 solid;
 	//min-height:65%;
 	.box{
 		background:#ff0000;
@@ -83,28 +77,26 @@ section{
 INTRO SECTION
 ==============-======= */
 .intro-arrow{
-	position:relative;
+	position:absolute;
 	text-align:center;
+	bottom:100px;
+	width:100%;
 	//position:relative;
 	.icn-arrow{
-
 		margin:0 auto;
 	}
-
 }
 
 .logo{
 	margin:0 auto;
 	position:relative;
 	top:100px;
-
 	margin-bottom:150px;
 }
 .img-holder{
 
 	width:100%;
 }
-
 
 /*/==========================
 
@@ -116,6 +108,7 @@ ABOUT SECTION
 
 	background:url("../img/cityscape.png") no-repeat;
 	background-size:100%;
+	background-position:center;
 	width:100%;
 	height:100%;
 	position:absolute;
@@ -144,9 +137,6 @@ ABOUT SECTION
 	margin-top:50px;
 	//border:1px #ff0000 solid;
 }
-
-
-
 
 @import "_music-section.scss";
 @import "_sprites.scss";

@@ -3,7 +3,7 @@
   src: url("../fonts/Raisonne_Demibold.woff"), url("../fonts/Raisonne_Demibold.ttf"), url("../fonts/Raisonne_Demibold.svg");
 }
 
-/* line 15, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 body {
   background-color: #020201;
   color: #fff;
@@ -14,25 +14,26 @@ body {
   margin: 0 auto;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 body, p, h1, h2, h3, nav, ul, li {
   font-family: "asherFont";
 }
 
-/* line 28, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 body, html {
   height: 100% !important;
   width: 100%;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 h2 {
   font-size: 12px;
   text-decoration: underline;
   padding-top: 30px;
+  margin-top: 0;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 nav {
   position: fixed;
   top: 0;
@@ -41,32 +42,31 @@ nav {
   z-index: 53;
   color: #fff;
 }
-/* line 46, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 nav ul li {
   font-size: 18px;
   font-weight: bold;
   display: inline;
   padding-right: 20px;
 }
-/* line 53, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 nav a, nav a:visited {
   color: #fff;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 article {
   height: 100% !important;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 section {
   position: relative;
   min-height: 700px;
   width: 100%;
   height: 100% !important;
-  border-top: 2px #ff0000 solid;
 }
-/* line 75, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 section .box {
   background: #ff0000;
   height: 20px;
@@ -76,17 +76,19 @@ section .box {
 
 INTRO SECTION
 ==============-======= */
-/* line 85, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .intro-arrow {
-  position: relative;
+  position: absolute;
   text-align: center;
+  bottom: 100px;
+  width: 100%;
 }
-/* line 89, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .intro-arrow .icn-arrow {
   margin: 0 auto;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .logo {
   margin: 0 auto;
   position: relative;
@@ -94,26 +96,27 @@ INTRO SECTION
   margin-bottom: 150px;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .img-holder {
   width: 100%;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
   background-size: 100%;
+  background-position: center;
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -126,7 +129,7 @@ INTRO SECTION
   margin: 0 auto;
 }
 
-/* line 143, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
 }
@@ -250,7 +253,6 @@ INTRO SECTION
 #clientele {
   font-size: 40px;
   color: #272726;
-  border: 1px #ff0000 solid;
 }
 
 /* line 9, ../sass/_clientele.scss */
