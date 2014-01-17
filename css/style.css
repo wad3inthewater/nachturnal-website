@@ -72,23 +72,30 @@ section .box {
   height: 20px;
 }
 
+@media (min-width: 1200px) {
+  /* line 74, ../sass/style.scss */
+  .background-full {
+    background-size: 100% !important;
+  }
+}
+
 /*==============-=======
 
 INTRO SECTION
 ==============-======= */
-/* line 79, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .intro-arrow {
   position: absolute;
   text-align: center;
   bottom: 100px;
   width: 100%;
 }
-/* line 85, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .intro-arrow .icn-arrow {
   margin: 0 auto;
 }
 
-/* line 90, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .logo {
   margin: 0 auto;
   position: relative;
@@ -96,12 +103,12 @@ INTRO SECTION
   margin-bottom: 150px;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .img-holder {
   width: 100%;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
   background-size: 100%;
@@ -111,18 +118,18 @@ INTRO SECTION
   position: absolute;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .cloud-3 {
   top: -140px;
   width: 25%;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -135,7 +142,7 @@ INTRO SECTION
   margin: 0 auto;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
 }
@@ -150,26 +157,26 @@ INTRO SECTION
   position: relative;
 }
 
-/* line 15, ../sass/_music-section.scss */
+/* line 16, ../sass/_music-section.scss */
 .stars-bg {
   width: 100%;
   height: 100%;
-  background: url("../img/stars-music.png") repeat-y;
+  background: url("../img/stars-music.png") repeat;
 }
 
-/* line 20, ../sass/_music-section.scss */
+/* line 22, ../sass/_music-section.scss */
 .music-section-header {
   width: 100%;
   padding-top: 100px;
   position: relative;
 }
-/* line 24, ../sass/_music-section.scss */
+/* line 26, ../sass/_music-section.scss */
 .music-section-header .large-text-wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-/* line 29, ../sass/_music-section.scss */
+/* line 31, ../sass/_music-section.scss */
 .music-section-header ul {
   color: #070a0d;
   font-size: 100px;
@@ -180,7 +187,7 @@ INTRO SECTION
   line-height: 110px;
   display: inline-block;
 }
-/* line 39, ../sass/_music-section.scss */
+/* line 41, ../sass/_music-section.scss */
 .music-section-header span {
   font-size: 16px;
   color: #fff;
@@ -188,24 +195,24 @@ INTRO SECTION
   letter-spacing: 3px;
   text-decoration: underline;
 }
-/* line 46, ../sass/_music-section.scss */
+/* line 48, ../sass/_music-section.scss */
 .music-section-header .a-underline {
   left: 38%;
 }
-/* line 49, ../sass/_music-section.scss */
+/* line 51, ../sass/_music-section.scss */
 .music-section-header .little-underline {
   left: 43%;
 }
-/* line 52, ../sass/_music-section.scss */
+/* line 54, ../sass/_music-section.scss */
 .music-section-header .night-underline {
   left: 36%;
 }
-/* line 56, ../sass/_music-section.scss */
+/* line 58, ../sass/_music-section.scss */
 .music-section-header .music-underline {
   left: 48%;
 }
 
-/* line 60, ../sass/_music-section.scss */
+/* line 62, ../sass/_music-section.scss */
 .stars-background {
   position: absolute;
 }
@@ -242,27 +249,27 @@ INTRO SECTION
   height: 100%;
 }
 
-/* line 22, ../sass/_norse-poster.scss */
+/* line 23, ../sass/_norse-poster.scss */
 .poster-container {
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 27, ../sass/_norse-poster.scss */
+/* line 28, ../sass/_norse-poster.scss */
 .norse-poster {
   margin: 0 auto;
   max-height: 700px;
   padding-top: 40px;
 }
 @media (min-width: 1200px) and (min-height: 900px) {
-  /* line 27, ../sass/_norse-poster.scss */
+  /* line 28, ../sass/_norse-poster.scss */
   .norse-poster {
     max-height: 900px;
   }
 }
 
-/* line 37, ../sass/_norse-poster.scss */
+/* line 38, ../sass/_norse-poster.scss */
 .norse-poster-title {
   position: absolute;
   margin: 0 auto;
@@ -274,19 +281,19 @@ INTRO SECTION
   width: 30%;
 }
 
-/* line 48, ../sass/_norse-poster.scss */
+/* line 49, ../sass/_norse-poster.scss */
 .video-link {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   padding-top: 200px;
 }
-/* line 53, ../sass/_norse-poster.scss */
+/* line 54, ../sass/_norse-poster.scss */
 .video-link a {
   color: #fff;
   font-size: 50px;
 }
-/* line 56, ../sass/_norse-poster.scss */
+/* line 57, ../sass/_norse-poster.scss */
 .video-link a:hover {
   color: #00ffff;
 }
@@ -304,13 +311,13 @@ INTRO SECTION
   width: 100%;
   height: 100%;
 }
-/* line 15, ../sass/_clientele.scss */
+/* line 16, ../sass/_clientele.scss */
 .client-bg h2 {
   text-align: center;
   margin: 0;
   padding-top: 30px;
 }
-/* line 21, ../sass/_clientele.scss */
+/* line 22, ../sass/_clientele.scss */
 .client-bg p {
   margin: 0 auto;
   text-align: center;

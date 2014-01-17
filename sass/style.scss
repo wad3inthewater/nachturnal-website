@@ -71,7 +71,11 @@ section{
 		height:20px;
 	}
 }
-
+.background-full{
+	@media(min-width:1200px){
+		background-size:100% !important;
+	}
+}
 /*==============-=======
 
 INTRO SECTION
