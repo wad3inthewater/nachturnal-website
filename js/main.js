@@ -18,6 +18,27 @@
 });*/
 
 $(document).ready(function() {
+
+    soundcloud.addEventListener('onPlayerReady', function(player, data) {
+        player.api_play();
+
+    var flashvars = {
+      enable_api: true,
+      object_id: "myPlayer",
+      url: "https://soundcloud.com/snowmine/rome"
+    };
+    var params = {
+      allowscriptaccess: "always"
+    };
+    var attributes = {
+      id: "myPlayer",
+      name: "myPlayer"
+    };
+    swfobject.embedSWF("http://player.soundcloud.com/player.swf", "myContent", "81", "100%", "9.0.0","expressInstall.swf", flashvars, params, attributes);
+
+                //
+    });
+
     var s = skrollr.init();
     Shadowbox.init({
         language:'en',
@@ -33,11 +54,26 @@ $(document).ready(function() {
         //s.refresh();
         //skrollr.init();
     }
-    function fixSkrollr(){
-
-    }
     handleResize();
     $(window).bind('resize', handleResize);
+
+// menu show hide
+    //$(".nav").hide();
+    $("nav").on("hover",function(e) {
+        //$(".nav").stop().slideToggle();
+        //$(".nav").stop();
+    });
+//change the moon icon
+var currentSection = $("section");
+var distance = $("#about").offset().top;
+
+var $window = $ (window);
+
+$window.scroll(function() {
+    if($window.scrollTop() >= distance ){
+        
+    }   
+});
 
 
 });
