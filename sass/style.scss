@@ -80,7 +80,16 @@ section{
 	}
 }
 .background-full{
-	@media(min-width:1200px){
+    height:100%;
+    width:100%;
+    margin:0 auto;
+    
+    position:absolute;
+    
+    //max-height:700px;
+    //max-width:1000px;
+
+	@media(max-width:979px){
 		background-size:100% !important;
 	}
 }
@@ -92,6 +101,15 @@ section{
 
 INTRO SECTION
 ==============-======= */
+#intro{
+	
+	//background-size: 100%;
+	.intro-bg{
+		background:url("../img/intro-bg.png") no-repeat;
+		background-position: top center;
+		//background-size: 100%;
+	}
+}
 .intro-arrow{
 	position:absolute;
 	text-align:center;
@@ -122,8 +140,8 @@ ABOUT SECTION
 .skyscrapers{
 
 	background:url("../img/cityscape.png") no-repeat;
-	background-size:100%;
-	background-position:center;
+	//background-size:100%;
+	background-position:right center;
 	width:100%;
 	height:100%;
 	position:absolute;
@@ -136,6 +154,9 @@ ABOUT SECTION
 .cloud-3{
 	top:-140px;
 	width:25%;
+}
+.aura{
+	position:absolute;
 }
 .about-pic{
 	position:absolute;
@@ -155,11 +176,7 @@ ABOUT SECTION
 	margin-top:50px;
 	//border:1px #ff0000 solid;
 }
-.soundcloud{
-	width:250px;
-	float:right;
-	margin-right:100px;
-}
+
 
 @import "_music-section.scss";
 @import "_sprites.scss";

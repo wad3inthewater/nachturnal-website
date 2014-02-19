@@ -8,7 +8,7 @@ MUSIC SECTION
     height:100%;
     width:100%;
     margin:0 auto;
-    background:url("../img/music-background.jpg") no-repeat;
+    //background:url("../img/music-background.jpg") no-repeat;
     background-position:center;
     position:relative;
    // background-size:100%;
@@ -16,12 +16,13 @@ MUSIC SECTION
 .stars-bg{
     width:100%;
     height:100%;
-    background:url("../img/stars-music.png") repeat;
+    position:absolute;
+    background:url("../img/stars-music.png") repeat-x;
    // background-size:100%;
 }
 .music-section-header{
     width:100%;
-    padding-top:100px;
+    padding-top:20px;
     position:relative;
     .large-text-wrap{
         margin:0 auto;
@@ -29,34 +30,45 @@ MUSIC SECTION
         text-align:center;
     }
     ul{
-        color:#070a0d;
+        color:#7b8793;
         font-size:100px;
-        letter-spacing:20px;
-        text-align:center;
+        letter-spacing:3px;
+        text-align:left;
         list-style:none;
         padding:0;
-        line-height:110px;
+        margin:60px 0 0 0;
+        line-height:85px;
         display:inline-block;
     }
     span{
         font-size: 16px;
         color:#fff;
-        position:absolute;
+        //position:absolute;
         letter-spacing: 3px;
         text-decoration: underline;
     }
     .a-underline{
-        left: 38%;
+        margin-left:95px;
+        span{
+            left:0;
+        }
     }
     .little-underline{
-        left:43%;
+        margin-left:40px;
+        span{
+            left:43%;
+        }
     }
     .night-underline{
-        left:36%;
-
+        margin-left:110px;
+        span{
+            left:36%;
+        }
     }
     .music-underline{
-        left:48%;
+        span{
+            left:36%;
+        }
     }
 }
 .stars-background{
@@ -69,3 +81,24 @@ MUSIC SECTION
 
 }
 
+.music-aura-green{
+    top:0;
+    background:url(../img/music-aura-green.png) no-repeat;
+    background-position:top center;
+    opacity:0.7;
+}
+.music-aura-red{
+    top:0;
+    background:url(../img/music-aura-red.png) no-repeat;
+    background-position:top center;
+}
+
+.soundcloud{
+    width:450px;
+    //float:right;
+    margin:0 auto;
+    position: absolute;
+    right:0;
+    left:0;
+    bottom:100px;
+}

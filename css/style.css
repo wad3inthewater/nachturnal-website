@@ -77,14 +77,21 @@ section .box {
   height: 20px;
 }
 
-@media (min-width: 1200px) {
+/* line 82, ../sass/style.scss */
+.background-full {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+}
+@media (max-width: 979px) {
   /* line 82, ../sass/style.scss */
   .background-full {
     background-size: 100% !important;
   }
 }
 
-/* line 88, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .g-background-default {
   background: #000 !important;
 }
@@ -93,19 +100,25 @@ section .box {
 
 INTRO SECTION
 ==============-======= */
-/* line 95, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
+#intro .intro-bg {
+  background: url("../img/intro-bg.png") no-repeat;
+  background-position: top center;
+}
+
+/* line 113, ../sass/style.scss */
 .intro-arrow {
   position: absolute;
   text-align: center;
   bottom: 100px;
   width: 100%;
 }
-/* line 101, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .intro-arrow .icn-arrow {
   margin: 0 auto;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .logo {
   margin: 0 auto;
   position: relative;
@@ -113,33 +126,37 @@ INTRO SECTION
   margin-bottom: 150px;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .img-holder {
   width: 100%;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-position: right center;
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .cloud-3 {
   top: -140px;
   width: 25%;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
+.aura {
+  position: absolute;
+}
+
+/* line 161, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -151,16 +168,9 @@ INTRO SECTION
   margin: 0 auto;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
-}
-
-/* line 158, ../sass/style.scss */
-.soundcloud {
-  width: 250px;
-  float: right;
-  margin-right: 100px;
 }
 
 /* line 7, ../sass/_music-section.scss */
@@ -168,7 +178,6 @@ INTRO SECTION
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  background: url("../img/music-background.jpg") no-repeat;
   background-position: center;
   position: relative;
 }
@@ -177,60 +186,98 @@ INTRO SECTION
 .stars-bg {
   width: 100%;
   height: 100%;
-  background: url("../img/stars-music.png") repeat;
+  position: absolute;
+  background: url("../img/stars-music.png") repeat-x;
 }
 
-/* line 22, ../sass/_music-section.scss */
+/* line 23, ../sass/_music-section.scss */
 .music-section-header {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 20px;
   position: relative;
 }
-/* line 26, ../sass/_music-section.scss */
+/* line 27, ../sass/_music-section.scss */
 .music-section-header .large-text-wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-/* line 31, ../sass/_music-section.scss */
+/* line 32, ../sass/_music-section.scss */
 .music-section-header ul {
-  color: #070a0d;
+  color: #7b8793;
   font-size: 100px;
-  letter-spacing: 20px;
-  text-align: center;
+  letter-spacing: 3px;
+  text-align: left;
   list-style: none;
   padding: 0;
-  line-height: 110px;
+  margin: 60px 0 0 0;
+  line-height: 85px;
   display: inline-block;
 }
-/* line 41, ../sass/_music-section.scss */
+/* line 43, ../sass/_music-section.scss */
 .music-section-header span {
   font-size: 16px;
   color: #fff;
-  position: absolute;
   letter-spacing: 3px;
   text-decoration: underline;
 }
-/* line 48, ../sass/_music-section.scss */
+/* line 50, ../sass/_music-section.scss */
 .music-section-header .a-underline {
-  left: 38%;
+  margin-left: 95px;
 }
-/* line 51, ../sass/_music-section.scss */
+/* line 52, ../sass/_music-section.scss */
+.music-section-header .a-underline span {
+  left: 0;
+}
+/* line 56, ../sass/_music-section.scss */
 .music-section-header .little-underline {
-  left: 43%;
-}
-/* line 54, ../sass/_music-section.scss */
-.music-section-header .night-underline {
-  left: 36%;
+  margin-left: 40px;
 }
 /* line 58, ../sass/_music-section.scss */
-.music-section-header .music-underline {
-  left: 48%;
+.music-section-header .little-underline span {
+  left: 43%;
+}
+/* line 62, ../sass/_music-section.scss */
+.music-section-header .night-underline {
+  margin-left: 110px;
+}
+/* line 64, ../sass/_music-section.scss */
+.music-section-header .night-underline span {
+  left: 36%;
+}
+/* line 69, ../sass/_music-section.scss */
+.music-section-header .music-underline span {
+  left: 36%;
 }
 
-/* line 62, ../sass/_music-section.scss */
+/* line 74, ../sass/_music-section.scss */
 .stars-background {
   position: absolute;
+}
+
+/* line 84, ../sass/_music-section.scss */
+.music-aura-green {
+  top: 0;
+  background: url(../img/music-aura-green.png) no-repeat;
+  background-position: top center;
+  opacity: 0.7;
+}
+
+/* line 90, ../sass/_music-section.scss */
+.music-aura-red {
+  top: 0;
+  background: url(../img/music-aura-red.png) no-repeat;
+  background-position: top center;
+}
+
+/* line 96, ../sass/_music-section.scss */
+.soundcloud {
+  width: 450px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 100px;
 }
 
 /* line 42, icons/*.png */
@@ -250,42 +297,61 @@ INTRO SECTION
   width: 61px;
 }
 
-/* line 7, ../sass/_norse-poster.scss */
-.norse-poster-bg-part-01 {
-  background: url("../img/norse-poster-bg-01.jpg") no-repeat;
-  background-position: 50% 100%;
-  height: 100%;
+/* line 10, ../sass/_norse-poster.scss */
+.video-bg-fade {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  background: -webkit-linear-gradient(#020201, #1f2b3c);
+  /* For Safari */
+  background: -o-linear-gradient(#020201, #1f2b3c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#020201, #1f2b3c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#020201, #1f2b3c);
+  /* Standard syntax (must be last) */
 }
 
-/* line 15, ../sass/_norse-poster.scss */
-.norse-poster-bg-part-02 {
-  background: url("../img/norse-poster-bg-02.jpg") no-repeat;
+/* line 20, ../sass/_norse-poster.scss */
+.video-stars {
+  background: url("../img/video-stars.png") repeat-x;
+}
+
+/* line 24, ../sass/_norse-poster.scss */
+.now-playing-sign {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 28, ../sass/_norse-poster.scss */
+.video-aura-blue {
+  background: url("../img/video-aura-blue.png") no-repeat;
   background-position: center;
-  background-position: 50% 0%;
-  height: 100%;
 }
 
-/* line 23, ../sass/_norse-poster.scss */
+/* line 32, ../sass/_norse-poster.scss */
 .poster-container {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
-/* line 28, ../sass/_norse-poster.scss */
+/* line 38, ../sass/_norse-poster.scss */
 .norse-poster {
   margin: 0 auto;
-  max-height: 700px;
+  max-height: 530px;
   padding-top: 40px;
 }
 @media (min-width: 1200px) and (min-height: 900px) {
-  /* line 28, ../sass/_norse-poster.scss */
+  /* line 38, ../sass/_norse-poster.scss */
   .norse-poster {
     max-height: 900px;
   }
 }
 
-/* line 38, ../sass/_norse-poster.scss */
+/* line 48, ../sass/_norse-poster.scss */
 .norse-poster-title {
   position: absolute;
   margin: 0 auto;
@@ -293,54 +359,135 @@ INTRO SECTION
   left: 0;
   right: 0;
   top: 110px;
-  max-width: 500px;
-  width: 30%;
+  max-width: 360px;
 }
 
-/* line 49, ../sass/_norse-poster.scss */
+/* line 59, ../sass/_norse-poster.scss */
+.play-poster {
+  display: inline-block;
+}
+
+/* line 62, ../sass/_norse-poster.scss */
 .video-link {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   padding-top: 200px;
 }
-/* line 54, ../sass/_norse-poster.scss */
+/* line 67, ../sass/_norse-poster.scss */
 .video-link a {
   color: #fff;
   font-size: 50px;
 }
-/* line 57, ../sass/_norse-poster.scss */
+/* line 70, ../sass/_norse-poster.scss */
 .video-link a:hover {
   color: #00ffff;
 }
 
-/* line 1, ../sass/_clientele.scss */
-#clientele {
+/* line 76, ../sass/_norse-poster.scss */
+.play-ticket {
+  border: 1px solid #fff;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px 0 10px 0;
+}
+/* line 83, ../sass/_norse-poster.scss */
+.play-ticket a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 87, ../sass/_norse-poster.scss */
+.play-ticket p {
   font-size: 40px;
-  color: #272726;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin: 0;
+}
+/* line 92, ../sass/_norse-poster.scss */
+.play-ticket p:first-child {
+  font-size: 20px;
 }
 
-/* line 9, ../sass/_clientele.scss */
+/* line 1, ../sass/_clientele.scss */
+.fade-bg-color {
+  background: #e6e2e2;
+}
+
+/* line 4, ../sass/_clientele.scss */
+.fade-transition {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  background: -webkit-linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* For Safari */
+  background: -o-linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* Standard syntax (must be last) */
+}
+
+/* line 13, ../sass/_clientele.scss */
+#clientele {
+  font-size: 30px;
+  color: #272726;
+  background: #e6e2e2;
+}
+
+/* line 20, ../sass/_clientele.scss */
+.clientele-bg-fade {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  background: -webkit-linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* For Safari */
+  background: -o-linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1f2b3c, rgba(31, 43, 60, 0));
+  /* Standard syntax (must be last) */
+}
+
+/* line 34, ../sass/_clientele.scss */
+.clientele-aura-tan {
+  background: url("../img/clientele-aura-tan.png") no-repeat;
+  background-size: 100%;
+  top: 60px;
+}
+@media (min-width: 1024px) {
+  /* line 34, ../sass/_clientele.scss */
+  .clientele-aura-tan {
+    background-size: 100% 80%;
+  }
+}
+
+/* line 42, ../sass/_clientele.scss */
 .client-bg {
-  background: url("../img/client-bg.jpg") no-repeat;
   background-position: center;
   width: 100%;
   height: 100%;
 }
-/* line 16, ../sass/_clientele.scss */
+/* line 49, ../sass/_clientele.scss */
 .client-bg h2 {
   text-align: center;
-  margin: 0;
+  margin: 50px 0 40px 0;
   padding-top: 30px;
+  font-size: 70px;
+  color: #84807d;
+  letter-spacing: 15px;
 }
-/* line 22, ../sass/_clientele.scss */
+/* line 58, ../sass/_clientele.scss */
 .client-bg p {
   margin: 0 auto;
   text-align: center;
   width: 80%;
   padding: 0 30px 0 30px;
   position: relative;
-  top: 15%;
 }
 
 /* line 1, ../sass/_connect.scss */

@@ -1,13 +1,46 @@
+.fade-bg-color{
+	background: #e6e2e2;
+}
+.fade-transition{
+	height: 200px;
+	width: 100%;
+	position: relative;
+	background: -webkit-linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* For Safari */
+	background: -o-linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* Standard syntax (must be last) */
+}
 #clientele{
-	font-size:40px;
+	font-size:30px;
 	color:#272726;
+	background:#e6e2e2;
 	//border: 1px #ff0000 solid;
 
 }
-
-
+.clientele-bg-fade{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top:0;
+	background: -webkit-linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* For Safari */
+	background: -o-linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(rgba(31,43,60,1) , rgba(31,43,60,0)); /* Standard syntax (must be last) */
+	//background: -webkit-linear-gradient( #1f2b3c , #e6e2e2); /* For Safari */
+	//background: -o-linear-gradient(#1f2b3c , #e6e2e2); /* For Opera 11.1 to 12.0 */
+	//background: -moz-linear-gradient(#1f2b3c , #e6e2e2); /* For Firefox 3.6 to 15 */
+	//background: linear-gradient(#1f2b3c , #e6e2e2); /* Standard syntax (must be last) */
+}
+.clientele-aura-tan{
+	background:url("../img/clientele-aura-tan.png") no-repeat;
+	background-size:100%;
+	top:60px;
+	@media(min-width:1024px){
+		background-size:100% 80%;
+	}
+}
 .client-bg{
-	background:url("../img/client-bg.jpg")no-repeat;
+	//background:url("../img/client-bg.jpg")no-repeat;
 	background-position:center;
 	width:100%;
 	height:100%;
@@ -15,8 +48,11 @@
 
 	h2{
 		text-align: center;
-		margin:0;
+		margin:50px 0 40px 0;
 		padding-top:30px;
+		font-size:70px;
+		color:#84807d;
+		letter-spacing: 15px;
 	}
 
 	p{
@@ -25,7 +61,7 @@
 		width:80%;
 		padding: 0 30px 0 30px;
 		position:relative;
-		top:15%;
+		//top:15%;
 
 	}
 }

@@ -29,34 +29,34 @@
         <nav>
         <img src="img/moon-icon.png" alt="" class="moon-icon">
             <ul class="nav">
-                <li><a href="#intro">intro</a></li>
+                <li><a href="#intro">home</a></li>
                 <li><a href="#about">about</a></li>
                 <li><a href="#music">music</a></li>
-                <li><a href="#norse-connection">poster</a></li>
+                <li><a href="#norse-connection">video</a></li>
                 <li><a href="#clientele">clientele</a></li>
                 <li><a href="#connect">contact</a></li>
             </ul>
         </nav>
 
 
-        <article>
+        <article id="skrollr-body">
             <section id="intro">
-                <div class="img-holder"
-                data--100-top="opacity:1;"
-                data--400-top="opacity:0;">
+                <div class="intro-bg background-full"></div>
+                    <div class="img-holder"
+                    data--100-top="opacity:1;"
+                    data--400-top="opacity:0;">
 
-                    <img src="img/asher-nacht-title.png" alt="" class="img-responsive logo">
-                    <div class='intro-arrow'>
-                        <p>
-                            OUT FOR<br>
-                            THE <br>
-                            NIGHT
-                         </p>
-                        <div class="icn icn-arrow"></div>
+                        <img src="img/asher-nacht-title.png" alt="" class="img-responsive logo">
+                        <div class='intro-arrow'>
+                            <p>
+                                OUT FOR<br>
+                                THE <br>
+                                NIGHT
+                             </p>
+                            <div class="icn icn-arrow"></div>
+                        </div>
                     </div>
-                </div>
-
-
+                
             </section>
 
             <section id="about" class="about-section">
@@ -75,10 +75,14 @@
                         data-top="right:0; opacity:1;"
                         data--top="right:0; opacity:1;">
                 </div>
+                <div class="aura">
+                    <img src="img/about-aura-green.png" alt="" class="aura-green">
+                    <img src="img/about-aura-red.png" alt="" class="aura-red">
+                </div>
                 <div class="about-content skyscrapers"
                     data-anchor-target="#about"
-                    data-400-top="background-position:0 80%;"
-                    data-top="background-position:0 60%;">
+                    data-400-top="background-position:;"
+                    data-top="background-position:;">
                     <div class="img-holder">
                         <img src="img/asher.png" alt="" class="img-responsive about-pic"
                             data-anchor-target="#about"
@@ -88,7 +92,7 @@
                     <div class="about-quote"
                     data-200-top="opacity:0;"
                     data-50-top="opacity:1;">
-                        <img src="img/about-quote.png" alt="" class="img-respsonive col-md-2 col-md-offset-2">
+                        
                     </div>
                 </div>
 
@@ -101,40 +105,52 @@
                         data--100-top="top:50%;"
                         > -->
                     <div class="stars-bg"
-                        data-800-top="background-position:50% 600px;"
-                        data--1000-top="background-position:50% 20px;">
-                        <div class="music-section-header">
-                        <div class="soundcloud">
-                        <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/snowmine/rome" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
-                        </div>
-
-                            <div class="large-text-wrap">
-                                <ul>
-                                    <li>EINE<span class="a-underline">A</span></li>
-                                    <li>KLEINE<span class="little-underline">LITTLE</span></li>
-                                    <li>NACHT<span class="night-underline">NIGHT</span></li>
-                                    <li>MUZIK<span class="music-underline">MUSIC</span></li>
-                                </ul>
-                            </div>
+                        data-800-top="background-position:50% 600px; opacity:0;"
+                        data--1000-top="background-position:50% 20px; opacity:1;">
+                    </div>                        
+                    <div class="music-section-header">
+                        <div class="large-text-wrap">
+                            <ul>
+                                <li class="a-underline">A<span>EINE</span></li>
+                                <li class="little-underline">LITTLE<span>KLEINE</span></li>
+                                <li class="night-underline">NIGHT<span>NACHT</span></li>
+                                <li class="music-underline">MUSIC<span>MUZIK</span></li>
+                            </ul>
                         </div>
                     </div>
+                <div class="background-full music-aura-red"></div>    
+                <div class="background-full music-aura-green"></div>
+                <div class="soundcloud">
+                    <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/snowmine/rome" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
+                </div>
                 </div>
             </section>
             <section id="norse-connection">
-                <div class="norse-poster-bg-part-01 background-full">
+                <div class="video-bg-fade"></div>
+                <div class="background-full video-stars"
+                    >
+                    <div class="background-full video-aura-blue"></div>
+                    <div class="now-playing-sign"><img src="img/video-now-playing.png" alt=""></div>
                     <div class="poster-container">
-                        <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;">
-                            <img src="img/norse-poster-title.png" alt="" class="norse-poster-title img-responsive"
+                        <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;" class="play-poster">
+                            <img src="img/norse-poster-title.png" alt="" class="norse-poster-title"
                                 data-anchor-target="#norse-connection"
-                                data-500-top="width:1%; opacity:0;"
-                                data-top="width:30%; opacity:1;">
-                            <img src="img/norse-poster.jpg" alt="" class="img-responsive norse-poster">
+                                data-300-top="width:1%; opacity:0;"
+                                data-top="width:100%; opacity:1;">
+                            <img src="img/video-norse-poster.jpg" alt="" class="img-responsive norse-poster">
                         </a>    
+                        <div class="play-ticket">
+                            <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;" title="Play Video">
+                                <p>ADMIT ONE</p>
+                                <p>PLAY VIDEO</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
-
             <section id="clientele">
+            <div class="clientele-aura-tan background-full"></div>
+            <div class="clientele-bg-fade"></div>
                 <div class="client-bg background-full"
                     data-anchor-target="#clientele"
                     data-500-top="opacity:0;"
@@ -152,7 +168,7 @@
 
             <section id="connect">
                 <div class="connect-info">
-                    <h2>CONNECT</h2>
+                    <h2></h2> <!-- fix -->
                     <address>
                         ASHER@NACTURNAL.COM
                     </address>
