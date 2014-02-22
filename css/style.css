@@ -9,7 +9,6 @@ body {
   color: #fff;
   padding: 0;
   margin: 0;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -171,6 +170,27 @@ INTRO SECTION
 /* line 175, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
+}
+
+/* line 179, ../sass/style.scss */
+.coming-soon {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+}
+/* line 184, ../sass/style.scss */
+.coming-soon img {
+  display: inline-block;
+}
+/* line 188, ../sass/style.scss */
+.coming-soon p {
+  font-size: 30px;
+}
+
+/* line 192, ../sass/style.scss */
+.remove-height {
+  height: 600px !important;
 }
 
 /* line 7, ../sass/_music-section.scss */
