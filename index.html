@@ -28,7 +28,11 @@
         <!-- Add your site or application content here -->
         <!--<div id="stars-bg"></div>-->
         <nav>
-        <img src="img/moon-icon.png" alt="" class="moon-icon">
+        <div class="moon-icon"
+            data-anchor-target="#clientele"
+            data-100-top="background-position: 0 0"
+            data-top="background-position: 0 -72px"
+        ></div>
             <ul class="nav">
                 <li><a href="#intro">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -39,9 +43,9 @@
             </ul>
         </nav>
 
-
-        <article id="skrollr-body">
-            <section id="intro">
+<!--<div id="skrollr-body">    -->
+        <article>
+            <section id="intro" class="">
                 <div class="intro-bg background-full"></div>
                     <div class="img-holder"
                     data--100-top="opacity:1;"
@@ -62,28 +66,35 @@
 
             <section id="about" class="about-section">
                 <div class="clouds">
-                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-1"
+                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-1 col-xs-4"
                         data-anchor-target="#about"
                         data-800-top="left:200px; opacity:0;"
                         data-100-top="left:0; opacity:1;">
-                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-6"
+                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-6 col-xs-4"
                         data-anchor-target="#about"
                         data-500-top="left:100px; opacity:0;"
                         data-top="left:0; opacity:1;">
-                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud cloud-3 col-md-4 col-md-offset-2"
+                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud cloud-3 col-md-4 col-md-offset-2 col-xs-4"
                         data-anchor-target="#about"
                         data-500-top="right:200px; opacity:0;"
                         data-top="right:0; opacity:1;"
                         data--top="right:0; opacity:1;">
                 </div>
-                <div class="aura">
-                    <img src="img/about-aura-green.png" alt="" class="aura-green">
-                    <img src="img/about-aura-red.png" alt="" class="aura-red">
-                </div>
+                <div class="stars-bg-x"
+                    data-500-top="background-position: 0 40%"
+                    data--300-top="background-position: 0 0%"
+                ></div>
                 <div class="about-content skyscrapers"
                     data-anchor-target="#about"
-                    data-400-top="background-position:;"
-                    data-top="background-position:;">
+                    data-400-top="background-position:100% 80%;"
+                    data-top="background-position:100% 50%;">
+                    <div class="aura">
+                        <img src="img/about-aura-green.png" alt="" class="aura-green img-responsive">
+                        <img src="img/about-aura-red.png" alt="" class="aura-red img-responsive"
+                        data-anchor-target="#about"
+                        data-400-top="opacity:0;"
+                        data-top="opacity:1;">
+                    </div>
                     <div class="img-holder">
                         <img src="img/asher.png" alt="" class="img-responsive about-pic"
                             data-anchor-target="#about"
@@ -105,71 +116,118 @@
                         data--800-top="top:0%;"
                         data--100-top="top:50%;"
                         > -->
-                    <div class="stars-bg"
-                        data-800-top="background-position:50% 600px; opacity:0;"
+                    <div class="stars-bg-x"
+                        data-800-top="background-position:50% 600px; opacity:1;"
                         data--1000-top="background-position:50% 20px; opacity:1;">
                     </div>                        
                     <div class="music-section-header">
                         <div class="large-text-wrap">
                             <ul>
-                                <li class="a-underline">A<span>EINE</span></li>
-                                <li class="little-underline">LITTLE<span>KLEINE</span></li>
-                                <li class="night-underline">NIGHT<span>NACHT</span></li>
-                                <li class="music-underline">MUSIC<span>MUZIK</span></li>
+                                <li class="a-underline">A
+                                    <span
+                                        data-anchor-target="#music"
+                                        data-700-top="left:40%; opacity: 0;"
+                                        data-top="left:50%; opacity: 1;">
+                                        EINE
+                                    </span>
+                                </li>
+                                <li class="little-underline">LITTLE
+                                    <span
+                                        data-anchor-target="#music"
+                                        data-700-top="left:50%; opacity: 0;"
+                                        data-top="left:43%; opacity: 1;">
+                                        KLEINE
+                                    </span>
+                                </li>
+                                <li class="night-underline">NIGHT<span
+                                        data-anchor-target="#music"
+                                        data-700-top="left:45%; opacity: 0;"
+                                        data-top="left:50%; opacity: 1;">NACHT</span></li>
+                                <li class="music-underline">MUSIC
+                                    <span
+                                        data-anchor-target="#music"
+                                        data-700-top="left:42%; opacity: 0;"
+                                        data-top="left:36%; opacity: 1;">
+                                        MUZIK
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                <div class="background-full music-aura-red"></div>    
-                <div class="background-full music-aura-green"></div>
+                <div class="background-full music-aura-red"
+                    data-500-top="background-position: intial 100%; opacity:0;"
+                    data-top="background-position:intial 0%; opacity:1;">
+                </div>    
+                <div class="background-full music-aura-green"
+                    data-500-top="background-position: intial 50%; opacity:0;"
+                    data-top="background-position:intial 100%; opacity:1;"></div>
                 <div class="soundcloud">
                     <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/snowmine/rome" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
                 </div>
                 </div>
             </section>
-            <section id="norse-connection">
+            <section id="norse-connection" class="">
                 <div class="video-bg-fade"></div>
+                
                 <div class="background-full video-stars"
-                    >
+                    data-anchor-target="#norse-connection"
+                    data-500-top="background-position:0 50%;"
+                    data--400-top="background-position:0 10%;">
+
                     <div class="background-full video-aura-blue"></div>
-                    <div class="now-playing-sign"><img src="img/video-now-playing.png" alt=""></div>
-                    <div class="poster-container">
+                    <div class="now-playing-sign">
+                        <img src="img/video-now-playing.png" alt="" class=""
+                            data-anchor-target="#norse-connection"
+                            data-200-top="top:150px;"
+                            data-top="top:10px;">
+                    </div>
+                    <div class="poster-container ">
                         <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;" class="play-poster">
                             <img src="img/norse-poster-title.png" alt="" class="norse-poster-title"
                                 data-anchor-target="#norse-connection"
-                                data-300-top="width:1%; opacity:0;"
-                                data-top="width:100%; opacity:1;">
+                                data-100-top="width:5%; opacity:0;"
+                                data-top="width:90%; opacity:1;">
                             <img src="img/video-norse-poster.jpg" alt="" class="img-responsive norse-poster">
+                            <p>click poster to play</p>
                         </a>    
-                        <div class="play-ticket">
+                        <!--<div class="play-ticket">
                             <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;" title="Play Video">
                                 <p>ADMIT ONE</p>
                                 <p>PLAY VIDEO</p>
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </section>
-            <section id="clientele">
-            <div class="clientele-aura-tan background-full"></div>
+            <section id="clientele" class="">
+            <div class="white-back background-full"
+                    data-anchor-target="#clientele"
+                    data-500-top="opacity:0;"
+                    data-top="opacity:1;"></div>
+
+            <div class="clientele-aura-tan background-full"
+                    data-anchor-target="#clientele"
+                    data-500-top="opacity:0;"
+                    data-top="opacity:1;"></div>
+
             <div class="clientele-bg-fade"></div>
                 <div class="client-bg background-full"
                     data-anchor-target="#clientele"
                     data-500-top="opacity:0;"
                     data-top="opacity:1;">
                     <h2>CLIENTELE</h2>
+                    
                     <p>
-                        THE BLIND BARBER. LE BARON. THE SOHO GRAND.
-                        MISTER H AT THE MONDRIAN SOHO. THE FLAT BROOKLYN. THE NORWOOD CLUB.
-                        LE POISSON ROUGE. TUTUS BROOKLYN. HOTEL CHANTELLE. ELLA. THE HUDSON HOTEL.
-                        THE STUDIO AT WEBSTER HALL. COMME DES GARCONS. TRIBECA FILM FESTIVAL AFTER PARTY FOR WEINSTEIN COMPANY. PRIVATE FUNDRAISERS FOR OBAMA '12. SANDY RELIEF &amp; TRANSPORTATION ALTERNATIVES. IMAGING THE INEFFABLE AT HARVARD. THE EMOA SPACE GALLERY IN CHELSEA.
+                        COMME DES GARCONS * LE BAIN AT THE STANDARD * TRIBECA FILM FESTIVAL AFTER PARTY FOR CUTIE AND THE BOXER &amp; THE WEINSTEIN COMPANY * SOHO GRAND * LE BARON * BLIND BARBER NY &amp; LA * EMOA GALLERY CHELSEA * MONDRIAN SOHO * THE JANE * THE NORWOOD CLUB * THE STUDIO AT WEBSTER HALL * LE POISSON ROUGE * THE HUDSON HOTEL * HOTEL CHANTELLE * TUTUS BROOKLYN
                     </p>
                 </div>
 
             </section>
-
             <section id="connect">
+                <div class="connect-logo-black">
+                    <img src="img/connect-logo-black.png" alt="" class="img-responsive">
+                </div>
                 <div class="connect-info">
-                    <h2></h2> <!-- fix -->
                     <address>
                         ASHER@NACTURNAL.COM
                     </address>
@@ -183,7 +241,7 @@
                 </div>
             </section>
         </article>
-
+<!--</div> -->
 
 
 

@@ -5,7 +5,9 @@ NORSE POSTER SECTION 01 - 02
 //==========================*/
 #norse-connection{
 	//background: #ccc;
-
+	a{
+		color:#fff;
+	}
 }
 .video-bg-fade{
 	width: 100%;
@@ -18,12 +20,23 @@ NORSE POSTER SECTION 01 - 02
 	background: linear-gradient(#020201, #1f2b3c); /* Standard syntax (must be last) */
 }
 .video-stars{
-    background:url("../img/video-stars.png") repeat-x;
+    background:url("../img/video-stars-02.png") repeat-x;
    // background-size:100%;
 }
 .now-playing-sign{
 	text-align:center;
-	margin-top:20px;
+	margin-top:100px;
+	width:100%;
+	img{
+		position: relative;
+	}
+	@media(max-width:480px){
+		 margin-top:35px;
+		img{
+			max-width:160px;
+		}
+		
+	}
 }
 .video-aura-blue{
 	background:url("../img/video-aura-blue.png") no-repeat;
@@ -44,6 +57,10 @@ NORSE POSTER SECTION 01 - 02
 	@media(min-width:1200px) and (min-height:900px){
 		max-height:900px;
 	}
+	@media(max-width:480px){
+		max-width:260px;
+		padding-top:20px;	
+	}
 }
 .norse-poster-title{
 	position:absolute;
@@ -51,10 +68,13 @@ NORSE POSTER SECTION 01 - 02
 	z-index:10;
 	left:0;
 	right:0;
-	top:110px;
+	top:90px;
 	max-width:360px;
 	//width:30%;
 	//top:200px;
+	@media(max-width:480px){
+		max-width:200px;
+	}
 }
 .play-poster{
 	display: inline-block;

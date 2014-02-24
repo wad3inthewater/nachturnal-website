@@ -18,11 +18,14 @@ body{
 	margin:0 auto;
 	//height:100%;
 	//background-attachment:fixed;
+	@media(max-width:480px){
+		overflow-x: hidden;
+	}
 }
 body,p,h1,h2,h3,nav,ul,li{font-family:"asherFont";}
 body,html{
 	height:100% !important;
-	width:100%;
+	//width:100%;
 }
 h2{
 	font-size:12px;
@@ -51,6 +54,10 @@ nav{
 			a{
 				padding-top:2px !important;
 				padding-bottom:2px !important;
+				text-decoration: none;
+				&:focus{
+					background-color: none;
+				}
 			}
 		}
 	}
@@ -58,6 +65,12 @@ nav{
 		color:#fff;
 
 	}
+}
+.moon-icon{
+	background:url("../img/moon-icon.png") no-repeat;
+	height:72px;
+	width:72px;
+	display:block;
 }
 article{
 	//overflow:hidden;
@@ -77,6 +90,10 @@ section{
 	.box{
 		background:#ff0000;
 		height:20px;
+	}
+	@media(max-width:480px){
+		height: 500px !important;
+		min-height: 500px !important;
 	}
 }
 .background-full{
@@ -129,6 +146,11 @@ INTRO SECTION
 }
 .img-holder{
 	width:100%;
+	img{
+		@media(max-width:480px){
+			padding:0 20px 0 20px;
+		}
+	}
 }
 
 /*/==========================
@@ -140,11 +162,23 @@ ABOUT SECTION
 .skyscrapers{
 
 	background:url("../img/cityscape.png") no-repeat;
-	//background-size:100%;
+	
 	background-position:right center;
 	width:100%;
 	height:100%;
 	position:absolute;
+		@media(max-width:480px){
+			background-size:100%;
+		}
+}
+.stars-bg-x{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:url("../img/stars-music.png") repeat-x;
+    @media(max-width:767px){
+    	background-size:100%;
+    }   
 }
 .clouds{
 	position:absolute;
@@ -157,6 +191,24 @@ ABOUT SECTION
 }
 .aura{
 	position:absolute;
+	width: 100%;
+	height: 100%;
+	.aura-red{
+		position: absolute;
+		right: 10%;
+		top: 25%;
+		@media(max-width:480px){
+			width:50%;
+		}
+	}
+	.aura-green{
+		position: absolute;
+		left: 10%;
+		top: 15%;
+		@media(max-width:480px){
+			width:50%;
+		}
+	}
 }
 .about-pic{
 	position:absolute;
@@ -170,8 +222,12 @@ ABOUT SECTION
 	left:0;
 	bottom:0;
 	margin:0 auto;
+	@media(max-width:480px){
+		max-width:190px;
+	}
 
 }
+
 .about-quote{
 	margin-top:50px;
 	//border:1px #ff0000 solid;
@@ -191,6 +247,10 @@ ABOUT SECTION
 }
 .remove-height{
 	height:600px !important;
+}
+
+.hide{
+	display:none;
 }
 @import "_music-section.scss";
 @import "_sprites.scss";

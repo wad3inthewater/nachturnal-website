@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
 
     function handleResize(){
-        $("section").height($(window).height());
+        //$("section").height($(window).height());
         //s.refresh();
         //skrollr.init();
     }
@@ -58,10 +58,9 @@ $(document).ready(function() {
     $(window).bind('resize', handleResize);
 
 // menu show hide
-    //$(".nav").hide();
+    $(".nav").hide();
     $("nav").on("hover",function(e) {
-        //$(".nav").stop().slideToggle();
-        //$(".nav").stop();
+        $(".nav").stop().slideToggle();
     });
 //change the moon icon
 var currentSection = $("section");
@@ -74,6 +73,10 @@ $window.scroll(function() {
         
     }   
 });
+
+
+//--------------------------------------------------------
+
 
 
 });
