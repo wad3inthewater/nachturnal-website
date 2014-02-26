@@ -22,7 +22,7 @@ MUSIC SECTION
 }
 .music-section-header{
     width:100%;
-    padding-top:20px;
+    padding-top:50px;
     position:relative;
     .large-text-wrap{
         margin:0 auto;
@@ -39,9 +39,13 @@ MUSIC SECTION
         margin:60px 0 0 0;
         line-height:85px;
         display:inline-block;
-        @media(max-width:767px){
+        @media(max-width:480px){
             font-size:40px;
             line-height:45px;
+        }
+        @media(min-width:1200px){
+            font-size:140px;
+            line-height:120px;
         }
     }
     span{
@@ -91,7 +95,7 @@ MUSIC SECTION
 .music-aura-green{
     top:0;
     background:url(../img/music-aura-green.png) no-repeat;
-    background-position:top center;
+    background-position:center center;
     opacity:0.7;
     @media(max-width:480px){
         top:60px;
@@ -100,7 +104,7 @@ MUSIC SECTION
 .music-aura-red{
     top:0;
     background:url(../img/music-aura-red.png) no-repeat;
-    background-position:top center;
+    background-position:center center;
     @media(max-width:480px){
         top:60px;
     } 
@@ -113,12 +117,15 @@ MUSIC SECTION
     position: absolute;
     right:0;
     left:0;
-    bottom:230px;
+    bottom:150px;
 
     @media(max-width:480px){
         max-width:220px;
         position: relative;
         bottom:0;
         margin-top:40px;
+    }
+    @media(min-width:1200px){
+        bottom:100px;
     }
 }

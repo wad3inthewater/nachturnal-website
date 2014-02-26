@@ -31,7 +31,7 @@
         <div class="moon-icon"
             data-anchor-target="#clientele"
             data-100-top="background-position: 0 0"
-            data-top="background-position: 0 -72px"
+            data-top="background-position: 0 -72px;"
         ></div>
             <ul class="nav">
                 <li><a href="#intro">home</a></li>
@@ -46,7 +46,11 @@
 <!--<div id="skrollr-body">    -->
         <article>
             <section id="intro" class="">
-                <div class="intro-bg background-full"></div>
+                <div class="intro-stars-bg background-full"
+                    data-anchor-target="#about"
+                    data-500-top="opacity:.3; background-position: 15% 100%"
+                    data-top="opacity:0; background-position: 15% 90%;"></div>
+
                     <div class="img-holder"
                     data--100-top="opacity:1;"
                     data--400-top="opacity:0;">
@@ -61,28 +65,36 @@
                             <div class="icn icn-arrow"></div>
                         </div>
                     </div>
-                
+               
             </section>
 
             <section id="about" class="about-section">
+                <div class="about-stars-top-bg background-full"
+                    data-800-top="background-position: 0 10%; opacity:.1;"
+                    data--200-top="background-position: 0 0; opacity:0.2;"></div>
                 <div class="clouds">
                     <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-1 col-xs-4"
                         data-anchor-target="#about"
-                        data-800-top="left:200px; opacity:0;"
+                        data-800-top="left:50px; opacity:0;"
                         data-100-top="left:0; opacity:1;">
-                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud col-md-4 col-md-offset-6 col-xs-4"
+                    <img src="img/cloud-01.png" alt="" class="img-repsonive cloud cloud-2 col-md-4 col-md-offset-6 col-xs-4"
                         data-anchor-target="#about"
-                        data-500-top="left:100px; opacity:0;"
+                        data-500-top="left:40px; opacity:0;"
                         data-top="left:0; opacity:1;">
                     <img src="img/cloud-01.png" alt="" class="img-repsonive cloud cloud-3 col-md-4 col-md-offset-2 col-xs-4"
                         data-anchor-target="#about"
-                        data-500-top="right:200px; opacity:0;"
-                        data-top="right:0; opacity:1;"
-                        data--top="right:0; opacity:1;">
+                        data-500-top="right:60px; opacity:0;"
+                        data-top="right:0; opacity:1;">
                 </div>
-                <div class="stars-bg-x"
-                    data-500-top="background-position: 0 40%"
-                    data--300-top="background-position: 0 0%"
+                <div class="stars-very-far background-full"
+                    data-800-top="background-position: 10% 20%; opacity:0;"
+                    data--200-top="background-position: 10% 0; opacity:0.2;"></div>
+                <div class="stars-far background-full"
+                    data-700-top="background-position: 0 50%; opacity:0;"
+                    data--400-top="background-position: 0 10%; opacity:0.5;"></div>
+                <div class="stars-bg-x background-full"
+                    data-500-top="background-position: 0 60%"
+                    data--200-top="background-position: 0 0%"
                 ></div>
                 <div class="about-content skyscrapers"
                     data-anchor-target="#about"
@@ -95,16 +107,18 @@
                         data-400-top="opacity:0;"
                         data-top="opacity:1;">
                     </div>
+
                     <div class="img-holder">
                         <img src="img/asher.png" alt="" class="img-responsive about-pic"
                             data-anchor-target="#about"
                             data-300-top="width:300px"
                             data-top="width:400px">
                     </div>
-                    <div class="about-quote"
-                    data-200-top="opacity:0;"
-                    data-50-top="opacity:1;">
-                        
+                    <div class="about-copy col-md-offset-2"
+                        data-anchor-target="#about"
+                        data-400-top="opacity:0;"
+                        data-top="opacity:1;">
+                        <p><span>P</span>roin mollis nibh eget urna dapibus, tincidunt suscipit nisl molestie. Nullam vestibulum in ipsum in bibendum. Etiam tincidunt ultricies metus. Vivamus in eros a diam ultrices tristique. Pellentesque eu tellus egestas, condimentum arcu ut, suscipit neque. Nam metus dui, viverra et dolor et, dignissim tristique felis. In commodo lobortis mauris sed dapibus. Vestibulum ac leo ut risus </p>
                     </div>
                 </div>
 
@@ -116,10 +130,15 @@
                         data--800-top="top:0%;"
                         data--100-top="top:50%;"
                         > -->
+                    <div class="stars-far background-full"
+                        data-anchor-target="#music"
+                        data-300-top="background-position: 0 100%; opacity:0.3;"
+                        data--300-top="background-position: 0 70%; opacity:0.1;"></div>
                     <div class="stars-bg-x"
-                        data-800-top="background-position:50% 600px; opacity:1;"
-                        data--1000-top="background-position:50% 20px; opacity:1;">
-                    </div>                        
+                        data-anchor-target="#music"
+                        data-500-top="background-position:0 50%; opacity:0;"
+                        data--200-top="background-position:0 20%; opacity:1;">
+                    </div>                                           
                     <div class="music-section-header">
                         <div class="large-text-wrap">
                             <ul>
@@ -154,27 +173,31 @@
                             </ul>
                         </div>
                     </div>
-                <div class="background-full music-aura-red"
-                    data-500-top="background-position: intial 100%; opacity:0;"
-                    data-top="background-position:intial 0%; opacity:1;">
-                </div>    
-                <div class="background-full music-aura-green"
-                    data-500-top="background-position: intial 50%; opacity:0;"
-                    data-top="background-position:intial 100%; opacity:1;"></div>
-                <div class="soundcloud">
-                    <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/snowmine/rome" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
-                </div>
-                </div>
+                    <div class="background-full music-aura-red"
+                        data-500-top="background-position: intial 100%; opacity:0;"
+                        data-top="background-position:intial 0%; opacity:1;">
+                    </div>    
+                    <div class="background-full music-aura-green"
+                        data-500-top="background-position: intial 50%; opacity:0;"
+                        data-top="background-position:intial 100%; opacity:1;"></div>
+                    <div class="soundcloud">
+                        <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/asher-nacht/a-little-night-music-vol-i" width="100%" height="100" scrolling="no" frameborder="no"></iframe>
+                    </div>
             </section>
             <section id="norse-connection" class="">
                 <div class="video-bg-fade"></div>
-                
-                <div class="background-full video-stars"
+                <div class="stars-very-far background-full"
                     data-anchor-target="#norse-connection"
-                    data-500-top="background-position:0 50%;"
-                    data--400-top="background-position:0 10%;">
+                    data-400-top="background-position: 0 10px; opacity:0.3;"
+                    data--100-top="background-position: 0 -100px; opacity:0.1;"></div>
+                <div class="background-full stars-bg-x"
+                    data-anchor-target="#norse-connection"
+                    data-300-top="background-position:0 50%;"
+                    data--200-top="background-position:0 10%;">
 
-                    <div class="background-full video-aura-blue"></div>
+                    <div class="background-full video-aura-blue"
+                        data-500-top="background-position: intial 50%; opacity:0;"
+                        data-top="background-position:intial 100%; opacity:1;"></div>
                     <div class="now-playing-sign">
                         <img src="img/video-now-playing.png" alt="" class=""
                             data-anchor-target="#norse-connection"
@@ -182,13 +205,13 @@
                             data-top="top:10px;">
                     </div>
                     <div class="poster-container ">
-                        <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;" class="play-poster">
+                        <a href="http://player.vimeo.com/video/84415634?autoplay=1" rel="shadowbox;" class="play-poster">
                             <img src="img/norse-poster-title.png" alt="" class="norse-poster-title"
                                 data-anchor-target="#norse-connection"
                                 data-100-top="width:5%; opacity:0;"
                                 data-top="width:90%; opacity:1;">
                             <img src="img/video-norse-poster.jpg" alt="" class="img-responsive norse-poster">
-                            <p>click poster to play</p>
+                            <p>click to play</p>
                         </a>    
                         <!--<div class="play-ticket">
                             <a href="http://player.vimeo.com/video/50429692?autoplay=1" rel="shadowbox;" title="Play Video">
@@ -218,28 +241,30 @@
                     <h2>CLIENTELE</h2>
                     
                     <p>
-                        COMME DES GARCONS * LE BAIN AT THE STANDARD * TRIBECA FILM FESTIVAL AFTER PARTY FOR CUTIE AND THE BOXER &amp; THE WEINSTEIN COMPANY * SOHO GRAND * LE BARON * BLIND BARBER NY &amp; LA * EMOA GALLERY CHELSEA * MONDRIAN SOHO * THE JANE * THE NORWOOD CLUB * THE STUDIO AT WEBSTER HALL * LE POISSON ROUGE * THE HUDSON HOTEL * HOTEL CHANTELLE * TUTUS BROOKLYN
+                        COMME DES GARCONS * LE BAIN AT THE STANDARD * TRIBECA FILM FESTIVAL AFTER PARTY FOR CUTIE AND THE BOXER &amp; THE WEINSTEIN COMPANY * SOHO GRAND * LE BARON * BLIND BARBER NY &amp; LA * MAISON * EMOA GALLERY CHELSEA * MONDRIAN SOHO * THE JANE * THE NORWOOD CLUB * THE STUDIO AT WEBSTER HALL * LE POISSON ROUGE * THE HUDSON HOTEL * THE FLAT * HOTEL CHANTELLE * TUTUS BROOKLYN
                     </p>
                 </div>
 
             </section>
             <section id="connect">
-                <div class="connect-logo-black">
-                    <img src="img/connect-logo-black.png" alt="" class="img-responsive">
-                </div>
                 <div class="connect-info">
                     <address>
-                        ASHER@NACTURNAL.COM
+                        ASHER@NACHTURNAL.COM
                     </address>
                         <ul>
-                            <li>SOUNDCLOUD.</li>
+                            <li><a href="https://soundcloud.com/asher-nacht/a-little-night-music-vol-i">SOUNDCLOUD.</a></li>
                             <li>FACEBOOK.</li>
-                            <li>VIMEO.</li>
-                            <li>TWITTER.</li>
-                            <li>INSTAGRAM</li>
+                            <li><a href="http://vimeo.com/84415634">VIMEO.</a></li>
+                            <li><a href="https://twitter.com/AsherKN">TWITTER.</a></li>
+                            <li>TUMBLR.</li>
                         </ul>
                 </div>
+                <footer>
+                    <p class="pull-left">2014 ASHER NACHT</p>
+                    <p class="pull-right">ALL RIGHTS RESERVED.</p>
+                </footer>
             </section>
+
         </article>
 <!--</div> -->
 

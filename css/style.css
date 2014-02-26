@@ -19,7 +19,7 @@ body {
 }
 
 /* line 25, ../sass/style.scss */
-body, p, h1, h2, h3, nav, ul, li {
+body, p, h1, h2, h3, nav {
   font-family: "asherFont";
 }
 
@@ -36,7 +36,13 @@ h2 {
   margin-top: 0;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent !important;
+}
+
+/* line 41, ../sass/style.scss */
 nav {
   position: fixed;
   top: 0;
@@ -44,31 +50,42 @@ nav {
   padding-left: 20px;
   padding-top: 20px;
   z-index: 53;
+}
+@media (max-width: 767px) {
+  /* line 41, ../sass/style.scss */
+  nav {
+    display: none;
+  }
+}
+/* line 52, ../sass/style.scss */
+nav ul {
+  font-family: "Courier New", Courier, monospace;
   color: #fff;
 }
-/* line 49, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 nav ul li {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 100;
   display: inline;
   padding-right: 20px;
+  letter-spacing: 2px;
 }
-/* line 54, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 nav ul li a {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
   text-decoration: none;
 }
-/* line 58, ../sass/style.scss */
-nav ul li a:focus {
-  background-color: none;
+/* line 66, ../sass/style.scss */
+nav ul li a:hover {
+  text-decoration: underline;
 }
-/* line 64, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 nav a, nav a:visited {
   color: #fff;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .moon-icon {
   background: url("../img/moon-icon.png") no-repeat;
   height: 72px;
@@ -76,73 +93,109 @@ nav a, nav a:visited {
   display: block;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 article {
   height: 100% !important;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 section {
   position: relative;
   min-height: 768px;
   width: 100%;
   height: 100% !important;
 }
-/* line 90, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 section .box {
   background: #ff0000;
   height: 20px;
 }
 @media (max-width: 480px) {
-  /* line 82, ../sass/style.scss */
+  /* line 91, ../sass/style.scss */
   section {
     height: 500px !important;
     min-height: 500px !important;
   }
 }
 
-/* line 99, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .background-full {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   position: absolute;
 }
-@media (max-width: 979px) {
-  /* line 99, ../sass/style.scss */
+@media (max-width: 767px) {
+  /* line 108, ../sass/style.scss */
   .background-full {
     background-size: 100% !important;
   }
 }
 
-/* line 114, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .g-background-default {
   background: #000 !important;
+}
+
+/* line 127, ../sass/style.scss */
+.stars-far {
+  background: url("../img/stars-far.png") repeat-x;
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  /* line 127, ../sass/style.scss */
+  .stars-far {
+    background-size: 60%;
+    display: none;
+  }
+}
+
+/* line 135, ../sass/style.scss */
+.stars-very-far {
+  background: url("../img/stars-far.png") repeat-x;
+}
+@media (max-width: 767px) {
+  /* line 135, ../sass/style.scss */
+  .stars-very-far {
+    background-size: 50% !important;
+    opacity: 0.5;
+  }
 }
 
 /*==============-=======
 
 INTRO SECTION
 ==============-======= */
-/* line 124, ../sass/style.scss */
-#intro .intro-bg {
-  background: url("../img/intro-bg.png") no-repeat;
-  background-position: top center;
+/* line 149, ../sass/style.scss */
+#intro .intro-stars-bg {
+  background: url("../img/stars-far-half.png") repeat-x;
+  background-position: bottom center;
+  opacity: 0.2;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .intro-arrow {
   position: absolute;
   text-align: center;
   bottom: 100px;
   width: 100%;
 }
-/* line 136, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .intro-arrow .icn-arrow {
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  /* line 156, ../sass/style.scss */
+  .intro-arrow {
+    bottom: 80px;
+  }
+  /* line 167, ../sass/style.scss */
+  .intro-arrow p {
+    font-size: 14px;
+  }
+}
 
-/* line 141, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 .logo {
   margin: 0 auto;
   position: relative;
@@ -150,18 +203,24 @@ INTRO SECTION
   margin-bottom: 150px;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .img-holder {
   width: 100%;
 }
 @media (max-width: 480px) {
-  /* line 149, ../sass/style.scss */
+  /* line 181, ../sass/style.scss */
   .img-holder img {
     padding: 0 20px 0 20px;
   }
 }
 
-/* line 162, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
+.about-stars-top-bg {
+  background: url("../img/stars-far-half.png") repeat-x;
+  background-position: top center;
+}
+
+/* line 197, ../sass/style.scss */
 .skyscrapers {
   background: url("../img/cityscape.png") no-repeat;
   background-position: right center;
@@ -170,13 +229,13 @@ INTRO SECTION
   position: absolute;
 }
 @media (max-width: 480px) {
-  /* line 162, ../sass/style.scss */
+  /* line 197, ../sass/style.scss */
   .skyscrapers {
     background-size: 100%;
   }
 }
 
-/* line 174, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .stars-bg-x {
   width: 100%;
   height: 100%;
@@ -184,55 +243,60 @@ INTRO SECTION
   background: url("../img/stars-music.png") repeat-x;
 }
 @media (max-width: 767px) {
-  /* line 174, ../sass/style.scss */
+  /* line 209, ../sass/style.scss */
   .stars-bg-x {
     background-size: 100%;
   }
 }
 
-/* line 183, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .clouds {
   position: absolute;
 }
 
-/* line 188, ../sass/style.scss */
-.cloud-3 {
-  top: -140px;
+/* line 223, ../sass/style.scss */
+.cloud-2 {
   width: 25%;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
+.cloud-3 {
+  top: -140px;
+  width: 20%;
+}
+
+/* line 230, ../sass/style.scss */
 .aura {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 196, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .aura .aura-red {
   position: absolute;
   right: 10%;
   top: 25%;
 }
 @media (max-width: 480px) {
-  /* line 196, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   .aura .aura-red {
     width: 50%;
   }
 }
-/* line 204, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .aura .aura-green {
   position: absolute;
   left: 10%;
   top: 15%;
 }
 @media (max-width: 480px) {
-  /* line 204, ../sass/style.scss */
+  /* line 242, ../sass/style.scss */
   .aura .aura-green {
     width: 50%;
   }
 }
 
-/* line 213, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .about-pic {
   position: absolute;
   min-width: 200px;
@@ -244,41 +308,93 @@ INTRO SECTION
   margin: 0 auto;
 }
 @media (max-width: 480px) {
-  /* line 213, ../sass/style.scss */
+  /* line 251, ../sass/style.scss */
   .about-pic {
     max-width: 190px;
   }
 }
+@media (min-width: 1600px) {
+  /* line 251, ../sass/style.scss */
+  .about-pic {
+    max-height: 900px;
+    max-width: 800px;
+  }
+}
 
-/* line 231, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .about-quote {
   margin-top: 50px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
+.about-copy {
+  font-size: 12px;
+  font-weight: 100;
+  position: absolute;
+  bottom: 200px;
+}
+/* line 287, ../sass/style.scss */
+.about-copy p {
+  font-family: "Courier New", Courier, monospace;
+  width: 300px;
+  margin-left: 20px;
+}
+@media (max-width: 480px) {
+  /* line 279, ../sass/style.scss */
+  .about-copy {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  /* line 296, ../sass/style.scss */
+  .about-copy p {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* line 303, ../sass/style.scss */
 .coming-soon {
   width: 100%;
   margin-top: 50px;
   padding: 0 10px 0 10px;
   text-align: center;
 }
-/* line 240, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .coming-soon img {
   display: inline-block;
 }
-/* line 244, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .coming-soon p {
   font-size: 30px;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .remove-height {
   height: 600px !important;
 }
 
-/* line 252, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .hide {
   display: none;
+}
+
+/* line 325, ../sass/style.scss */
+footer {
+  background: #fdfdfd;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px 20px 15px;
+  font-size: 10px;
+}
+/* line 332, ../sass/style.scss */
+footer p {
+  background: #fdfdfd;
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #bab5b0;
 }
 
 /* line 7, ../sass/_music-section.scss */
@@ -301,7 +417,7 @@ INTRO SECTION
 /* line 23, ../sass/_music-section.scss */
 .music-section-header {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 50px;
   position: relative;
 }
 /* line 27, ../sass/_music-section.scss */
@@ -322,14 +438,21 @@ INTRO SECTION
   line-height: 85px;
   display: inline-block;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   /* line 32, ../sass/_music-section.scss */
   .music-section-header ul {
     font-size: 40px;
     line-height: 45px;
   }
 }
-/* line 47, ../sass/_music-section.scss */
+@media (min-width: 1200px) {
+  /* line 32, ../sass/_music-section.scss */
+  .music-section-header ul {
+    font-size: 140px;
+    line-height: 120px;
+  }
+}
+/* line 51, ../sass/_music-section.scss */
 .music-section-header span {
   font-size: 16px;
   color: #fff;
@@ -338,88 +461,94 @@ INTRO SECTION
   text-decoration: underline;
 }
 @media (max-width: 767px) {
-  /* line 47, ../sass/_music-section.scss */
+  /* line 51, ../sass/_music-section.scss */
   .music-section-header span {
     font-size: 10px;
   }
 }
-/* line 57, ../sass/_music-section.scss */
+/* line 61, ../sass/_music-section.scss */
 .music-section-header .a-underline {
   margin-left: 95px;
 }
-/* line 59, ../sass/_music-section.scss */
+/* line 63, ../sass/_music-section.scss */
 .music-section-header .a-underline span {
   left: 50%;
 }
-/* line 63, ../sass/_music-section.scss */
+/* line 67, ../sass/_music-section.scss */
 .music-section-header .little-underline {
   margin-left: 40px;
 }
-/* line 65, ../sass/_music-section.scss */
+/* line 69, ../sass/_music-section.scss */
 .music-section-header .little-underline span {
   left: 43%;
 }
-/* line 69, ../sass/_music-section.scss */
+/* line 73, ../sass/_music-section.scss */
 .music-section-header .night-underline {
   margin-left: 110px;
 }
-/* line 71, ../sass/_music-section.scss */
+/* line 75, ../sass/_music-section.scss */
 .music-section-header .night-underline span {
   left: 50%;
 }
-/* line 76, ../sass/_music-section.scss */
+/* line 80, ../sass/_music-section.scss */
 .music-section-header .music-underline span {
   left: 36%;
 }
 
-/* line 81, ../sass/_music-section.scss */
+/* line 85, ../sass/_music-section.scss */
 .stars-background {
   position: absolute;
 }
 
-/* line 91, ../sass/_music-section.scss */
+/* line 95, ../sass/_music-section.scss */
 .music-aura-green {
   top: 0;
   background: url(../img/music-aura-green.png) no-repeat;
-  background-position: top center;
+  background-position: center center;
   opacity: 0.7;
 }
 @media (max-width: 480px) {
-  /* line 91, ../sass/_music-section.scss */
+  /* line 95, ../sass/_music-section.scss */
   .music-aura-green {
     top: 60px;
   }
 }
 
-/* line 100, ../sass/_music-section.scss */
+/* line 104, ../sass/_music-section.scss */
 .music-aura-red {
   top: 0;
   background: url(../img/music-aura-red.png) no-repeat;
-  background-position: top center;
+  background-position: center center;
 }
 @media (max-width: 480px) {
-  /* line 100, ../sass/_music-section.scss */
+  /* line 104, ../sass/_music-section.scss */
   .music-aura-red {
     top: 60px;
   }
 }
 
-/* line 109, ../sass/_music-section.scss */
+/* line 113, ../sass/_music-section.scss */
 .soundcloud {
   max-width: 450px;
   margin: 0 auto;
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 230px;
+  bottom: 150px;
 }
 @media (max-width: 480px) {
-  /* line 109, ../sass/_music-section.scss */
+  /* line 113, ../sass/_music-section.scss */
   .soundcloud {
     max-width: 220px;
     position: relative;
     bottom: 0;
     margin-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, ../sass/_music-section.scss */
+  .soundcloud {
+    bottom: 100px;
   }
 }
 
@@ -588,22 +717,21 @@ INTRO SECTION
 
 /* line 1, ../sass/_clientele.scss */
 #clientele {
-  font-size: 30px;
   color: #272726;
 }
 
-/* line 6, ../sass/_clientele.scss */
+/* line 5, ../sass/_clientele.scss */
 .white-back {
   background: #fdfdfd;
   height: 100%;
 }
 
-/* line 10, ../sass/_clientele.scss */
+/* line 9, ../sass/_clientele.scss */
 .fade-bg-color {
   background: #e6e2e2;
 }
 
-/* line 13, ../sass/_clientele.scss */
+/* line 12, ../sass/_clientele.scss */
 .fade-transition {
   height: 200px;
   width: 100%;
@@ -618,7 +746,7 @@ INTRO SECTION
   /* Standard syntax (must be last) */
 }
 
-/* line 22, ../sass/_clientele.scss */
+/* line 21, ../sass/_clientele.scss */
 .clientele-bg-fade {
   width: 100%;
   height: 50%;
@@ -634,52 +762,71 @@ INTRO SECTION
   /* Standard syntax (must be last) */
 }
 
-/* line 36, ../sass/_clientele.scss */
+/* line 35, ../sass/_clientele.scss */
 .clientele-aura-tan {
   background: url("../img/clientele-aura-tan.png") no-repeat;
   background-size: 100%;
   top: 60px;
 }
 @media (min-width: 1024px) {
-  /* line 36, ../sass/_clientele.scss */
+  /* line 35, ../sass/_clientele.scss */
   .clientele-aura-tan {
     background-size: 100% 80%;
   }
 }
 
-/* line 44, ../sass/_clientele.scss */
+/* line 43, ../sass/_clientele.scss */
 .client-bg {
   background-position: center;
   width: 100%;
   height: 100%;
 }
-/* line 51, ../sass/_clientele.scss */
+/* line 50, ../sass/_clientele.scss */
 .client-bg h2 {
   text-align: center;
-  margin: 50px 0 40px 0;
+  margin: 130px 0 40px 0;
   padding-top: 30px;
   font-size: 70px;
   color: #84807d;
   letter-spacing: 15px;
 }
 @media (max-width: 480px) {
-  /* line 51, ../sass/_clientele.scss */
+  /* line 50, ../sass/_clientele.scss */
   .client-bg h2 {
     font-size: 30px;
   }
 }
-/* line 63, ../sass/_clientele.scss */
+/* line 62, ../sass/_clientele.scss */
 .client-bg p {
   margin: 0 auto;
   text-align: center;
   width: 80%;
+  font-size: 30px;
   padding: 0 30px 0 30px;
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 63, ../sass/_clientele.scss */
+  /* line 62, ../sass/_clientele.scss */
+  .client-bg p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 62, ../sass/_clientele.scss */
   .client-bg p {
     font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 62, ../sass/_clientele.scss */
+  .client-bg p {
+    font-size: 38px;
+  }
+}
+@media (min-width: 1600px) {
+  /* line 62, ../sass/_clientele.scss */
+  .client-bg p {
+    font-size: 50px;
   }
 }
 
@@ -698,7 +845,7 @@ INTRO SECTION
 }
 /* line 10, ../sass/_connect.scss */
 .connect-logo-black img {
-  margin-top: 100px;
+  margin-top: 50px;
   display: inline-block;
 }
 
@@ -707,12 +854,13 @@ INTRO SECTION
   margin: 0 auto;
   position: relative;
   text-align: center;
-  top: 30%;
+  top: 15%;
 }
 /* line 21, ../sass/_connect.scss */
 .connect-info address {
   padding-top: 50px;
   font-size: 34px;
+  color: #272726;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -721,7 +869,7 @@ INTRO SECTION
     font-size: 18px;
   }
 }
-/* line 31, ../sass/_connect.scss */
+/* line 32, ../sass/_connect.scss */
 .connect-info ul {
   list-style: none;
   padding: 0;

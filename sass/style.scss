@@ -22,7 +22,7 @@ body{
 		overflow-x: hidden;
 	}
 }
-body,p,h1,h2,h3,nav,ul,li{font-family:"asherFont";}
+body,p,h1,h2,h3,nav{font-family:"asherFont";}
 body,html{
 	height:100% !important;
 	//width:100%;
@@ -34,6 +34,10 @@ h2{
 	margin-top:0;
 }
 
+.nav>li>a:hover,
+.nav>li>a:focus{
+	background-color: transparent !important;
+} 
 nav{
 	position:fixed;
 	top:0;
@@ -41,22 +45,27 @@ nav{
 	padding-left:20px;
 	padding-top:20px;
 	z-index:53;
-	color:#fff;	
-	.nav{
-		//display:none;
+	@media(max-width:767px){
+		display:none;
 	}
+
 	ul{
+		font-family: "Courier New", Courier, monospace;
+		color:#fff;
+		//background-color:#000;
 		li{
-			font-size:18px;
+			font-size:12px;
 			font-weight: 100;
 			display:inline;
 			padding-right:20px;
+			letter-spacing: 2px;
 			a{
 				padding-top:2px !important;
 				padding-bottom:2px !important;
 				text-decoration: none;
-				&:focus{
-					background-color: none;
+				&:hover{
+					text-decoration: underline;
+
 				}
 			}
 		}
@@ -106,13 +115,29 @@ section{
     //max-height:700px;
     //max-width:1000px;
 
-	@media(max-width:979px){
+	@media(max-width:767px){
 		background-size:100% !important;
 	}
 }
 
 .g-background-default{
 	background:#000 !important;
+}
+
+.stars-far{
+	background:url("../img/stars-far.png") repeat-x;
+    @media(max-width:767px){
+    	background-size:60%;
+    	display:none;
+    }   
+	opacity:0.5;
+}
+.stars-very-far{
+	background:url("../img/stars-far.png") repeat-x;
+    @media(max-width:767px){
+    	background-size:50% !important;
+    	opacity:0.5;
+    }   
 }
 /*==============-=======
 
@@ -121,9 +146,10 @@ INTRO SECTION
 #intro{
 	
 	//background-size: 100%;
-	.intro-bg{
-		background:url("../img/intro-bg.png") no-repeat;
-		background-position: top center;
+	.intro-stars-bg{
+		background:url("../img/stars-far-half.png") repeat-x;
+		background-position: bottom center;
+		opacity:0.2;
 		//background-size: 100%;
 	}
 }
@@ -135,6 +161,12 @@ INTRO SECTION
 	//position:relative;
 	.icn-arrow{
 		margin:0 auto;
+	}
+	@media(max-width:480px){
+		bottom:80px;
+		p{
+			font-size:14px;
+		}
 	}
 }
 
@@ -158,7 +190,10 @@ INTRO SECTION
 ABOUT SECTION
 
 //==========================*/
-
+.about-stars-top-bg{
+	background:url("../img/stars-far-half.png") repeat-x;
+	background-position: top center;
+}
 .skyscrapers{
 
 	background:url("../img/cityscape.png") no-repeat;
@@ -185,9 +220,12 @@ ABOUT SECTION
 	//z-index:-100;
 
 }
+.cloud-2{
+	width:25%;
+}
 .cloud-3{
 	top:-140px;
-	width:25%;
+	width:20%;
 }
 .aura{
 	position:absolute;
@@ -225,12 +263,42 @@ ABOUT SECTION
 	@media(max-width:480px){
 		max-width:190px;
 	}
+	@media(min-width:1600px){
+		max-height:900px;
+		max-width:800px;
+		//max-height:1197px;
+	}
+
 
 }
 
 .about-quote{
 	margin-top:50px;
 	//border:1px #ff0000 solid;
+}
+.about-copy{
+	font-size:12px;
+	font-weight: 100;
+	position: absolute;
+	bottom: 200px;
+	span{
+		//font-size:30px;
+	}
+	p{
+		font-family: "Courier New", Courier, monospace;
+		width: 300px;
+		margin-left:20px;
+	}
+	@media(max-width:480px){
+		position: absolute;
+		width:100%;
+		top:0;
+		p{
+			width:280px;
+			margin:0 auto;
+		}
+	}
+
 }
 .coming-soon{
 	width:100%;
@@ -244,6 +312,7 @@ ABOUT SECTION
 	p{
 		font-size:30px;
 	}
+
 }
 .remove-height{
 	height:600px !important;
@@ -251,6 +320,23 @@ ABOUT SECTION
 
 .hide{
 	display:none;
+}
+
+footer{
+	background:#fdfdfd;
+	width:100%;
+	position: absolute;
+	bottom: 0;
+	padding: 0 15px 20px 15px;
+	font-size: 10px;
+	p{
+		background:#fdfdfd;
+		display:block;
+		//width:100%;
+		margin:0;
+		padding:0;
+		color:#bab5b0;
+	}
 }
 @import "_music-section.scss";
 @import "_sprites.scss";
